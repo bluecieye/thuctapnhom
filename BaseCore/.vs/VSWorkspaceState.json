@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.sixth",
+    "\\.sixth\\skills",
+    "\\BaseCore.Backend",
+    "\\BaseCore.Backend\\config",
+    "\\BaseCore.Backend\\routes",
+    "\\BaseCore.IOTService\\obj"
+  ],
+  "SelectedNode": "\\BaseCore.Backend\\routes\\auth.js",
+  "PreviewInSolutionExplorer": false
+}

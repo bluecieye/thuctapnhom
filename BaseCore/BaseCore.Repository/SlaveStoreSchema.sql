@@ -1,0 +1,84 @@
+USE [master];
+GO
+
+IF DB_ID(N'SlaveStoreDB') IS NULL
+BEGIN
+    CREATE DATABASE [SlaveStoreDB];
+END
+GO
+
+USE [SlaveStoreDB];
+GO
+
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+GO
+
+CREATE TABLE [Categories]
+(
+    [Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [Name] NVARCHAR(100) NOT NULL,
+    [Slug] NVARCHAR(100) NULL,
+    [Description] NVARCHAR(500) NULL
+);
+GO
+
+CREATE TABLE [Products]
+(
+    [Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [Name] NVARCHAR(200) NOT NULL,
+    [Slug] NVARCHAR(200) NULL,
+    [Brand] NVARCHAR(100) NULL,
+    [Gender] NVARCHAR(50) NULL,
+    [Price] DECIMAL(18,2) NOT NULL,
+    [OriginalPrice] DECIMAL(18,2) NULL,
+    [IsNew] BIT NOT NULL DEFAULT 0,
+    [Stock] INT NOT NULL,
+    [ImageUrl] NVARCHAR(500) NULL,
+    [Description] NVARCHAR(1000) NULL,
+    [CategoryId] INT NOT NULL,
+    CONSTRAINT [FK_Products_Categories] FOREIGN KEY ([CategoryId]) REFERENCES [Categories]([Id]) ON DELETE NO ACTION
+);
+GO
+
+CREATE TABLE [Users]
+(
+    [Id] NVARCHAR(450) NOT NULL PRIMARY KEY,
+    [UserName] NVARCHAR(50) NOT NULL UNIQUE,
+    [Password] NVARCHAR(255) NOT NULL,
+    [Salt] VARBINARY(MAX) NOT NULL,
+    [Name] NVARCHAR(100) NULL,
+    [Email] NVARCHAR(100) NULL,
+    [Phone] NVARCHAR(20) NULL,
+    [Contact] NVARCHAR(MAX) NULL,
+    [Position] NVARCHAR(MAX) NULL,
+    [Image] NVARCHAR(MAX) NULL,
+    [IsActive] BIT NOT NULL DEFAULT 1,
+    [UserType] INT NOT NULL DEFAULT 0,
+    [Created] DATETIME2 NOT NULL DEFAULT GETDATE()
+);
+GO
+
+CREATE TABLE [Orders]
+(
+    [Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [UserId] UNIQUEIDENTIFIER NOT NULL,
+    [OrderDate] DATETIME2 NOT NULL DEFAULT GETDATE(),
+    [TotalAmount] DECIMAL(18,2) NOT NULL,
+    [Status] NVARCHAR(100) NOT NULL,
+    [ShippingAddress] NVARCHAR(500) NULL,
+    CONSTRAINT [FK_Orders_Users] FOREIGN KEY ([UserId]) REFERENCES [Users]([Id])
+);
+GO
+
+CREATE TABLE [OrderDetails]
+(
+    [Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [OrderId] INT NOT NULL,
+    [ProductId] INT NOT NULL,
+    [Quantity] INT NOT NULL,
+    [UnitPrice] DECIMAL(18,2) NOT NULL,
+    CONSTRAINT [FK_OrderDetails_Orders] FOREIGN KEY ([OrderId]) REFERENCES [Orders]([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_OrderDetails_Products] FOREIGN KEY ([ProductId]) REFERENCES [Products]([Id]) ON DELETE NO ACTION
+);
+GO

@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FW\\FW\\BaseCore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\routes\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaseCore.Backend\\routes\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\routes\\products.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaseCore.Backend\\routes\\products.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\config\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaseCore.Backend\\config\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaseCore.Backend\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaseCore.Backend\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "products.js",
+              "DocumentMoniker": "D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\routes\\products.js",
+              "RelativeDocumentMoniker": "BaseCore.Backend\\routes\\products.js",
+              "ToolTip": "D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\routes\\products.js",
+              "RelativeToolTip": "BaseCore.Backend\\routes\\products.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-20T09:49:55.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "auth.js",
+              "DocumentMoniker": "D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\routes\\auth.js",
+              "RelativeDocumentMoniker": "BaseCore.Backend\\routes\\auth.js",
+              "ToolTip": "D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\routes\\auth.js",
+              "RelativeToolTip": "BaseCore.Backend\\routes\\auth.js",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwCIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-20T09:49:41.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "database.js",
+              "DocumentMoniker": "D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\config\\database.js",
+              "RelativeDocumentMoniker": "BaseCore.Backend\\config\\database.js",
+              "ToolTip": "D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\config\\database.js",
+              "RelativeToolTip": "BaseCore.Backend\\config\\database.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-20T09:42:11.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "server.js",
+              "DocumentMoniker": "D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\server.js",
+              "RelativeDocumentMoniker": "BaseCore.Backend\\server.js",
+              "ToolTip": "D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\server.js",
+              "RelativeToolTip": "BaseCore.Backend\\server.js",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-20T09:38:47.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".env",
+              "DocumentMoniker": "D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\.env",
+              "RelativeDocumentMoniker": "BaseCore.Backend\\.env",
+              "ToolTip": "D:\\FW\\FW\\BaseCore\\BaseCore.Backend\\.env",
+              "RelativeToolTip": "BaseCore.Backend\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-20T09:20:57.357Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
