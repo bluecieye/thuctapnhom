@@ -4,6 +4,7 @@ using BaseCore.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BaseCore.Repository.Migrations
 {
     [DbContext(typeof(MySqlDbContext))]
-    partial class MySqlDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260318090000_FixImageUrls")]
+    partial class FixImageUrls
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,30 +26,13 @@ namespace BaseCore.Repository.Migrations
 
             modelBuilder.Entity("BaseCore.Entities.Category", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
+                    b.Property<int>("Id").ValueGeneratedOnAdd().HasColumnType("int");
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Slug")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
+                    b.Property<string>("Description").IsRequired().HasMaxLength(500).HasColumnType("nvarchar(500)");
+                    b.Property<string>("Name").IsRequired().HasMaxLength(100).HasColumnType("nvarchar(100)");
+                    b.Property<string>("Slug").HasMaxLength(100).HasColumnType("nvarchar(100)");
                     b.HasKey("Id");
-
                     b.ToTable("Categories");
-
                     b.HasData(
                         new { Id = 1, Description = "Layered essentials for all seasons.", Name = "Outerwear", Slug = "outerwear" },
                         new { Id = 2, Description = "Everyday shirts, hoodies and tees.", Name = "Tops", Slug = "tops" },
@@ -58,33 +43,14 @@ namespace BaseCore.Repository.Migrations
 
             modelBuilder.Entity("BaseCore.Entities.Manufacturer", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
+                    b.Property<int>("Id").ValueGeneratedOnAdd().HasColumnType("int");
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Country")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Website")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
+                    b.Property<string>("Country").HasMaxLength(100).HasColumnType("nvarchar(100)");
+                    b.Property<string>("Description").HasMaxLength(500).HasColumnType("nvarchar(500)");
+                    b.Property<string>("Name").IsRequired().HasMaxLength(100).HasColumnType("nvarchar(100)");
+                    b.Property<string>("Website").HasMaxLength(200).HasColumnType("nvarchar(200)");
                     b.HasKey("Id");
-
                     b.ToTable("Manufacturers");
-
                     b.HasData(
                         new { Id = 1,  Name = "FormAsh",     Country = "Vietnam",     Description = "Contemporary fashion label known for clean, structured pieces." },
                         new { Id = 2,  Name = "Urban Chill", Country = "USA",         Description = "Streetwear brand focused on comfortable, everyday essentials." },
@@ -100,131 +66,51 @@ namespace BaseCore.Repository.Migrations
 
             modelBuilder.Entity("BaseCore.Entities.Order", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
+                    b.Property<int>("Id").ValueGeneratedOnAdd().HasColumnType("int");
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ShippingAddress")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("TotalAmount")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
+                    b.Property<DateTime>("OrderDate").HasColumnType("datetime2");
+                    b.Property<string>("ShippingAddress").IsRequired().HasMaxLength(500).HasColumnType("nvarchar(500)");
+                    b.Property<string>("Status").IsRequired().HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("TotalAmount").HasPrecision(18, 2).HasColumnType("decimal(18,2)");
+                    b.Property<Guid>("UserId").HasColumnType("uniqueidentifier");
                     b.HasKey("Id");
-
                     b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("BaseCore.Entities.OrderDetail", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
+                    b.Property<int>("Id").ValueGeneratedOnAdd().HasColumnType("int");
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("UnitPrice")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
+                    b.Property<int>("OrderId").HasColumnType("int");
+                    b.Property<int>("ProductId").HasColumnType("int");
+                    b.Property<int>("Quantity").HasColumnType("int");
+                    b.Property<decimal>("UnitPrice").HasPrecision(18, 2).HasColumnType("decimal(18,2)");
                     b.HasKey("Id");
-
                     b.HasIndex("OrderId");
-
                     b.HasIndex("ProductId");
-
                     b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("BaseCore.Entities.Product", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
+                    b.Property<int>("Id").ValueGeneratedOnAdd().HasColumnType("int");
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Brand")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<string>("Gender")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<bool>("IsNew")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
-
-                    b.Property<int?>("ManufacturerId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<decimal?>("OriginalPrice")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("Price")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("Slug")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<int>("Stock")
-                        .HasColumnType("int");
-
+                    b.Property<string>("Brand").HasMaxLength(100).HasColumnType("nvarchar(100)");
+                    b.Property<int>("CategoryId").HasColumnType("int");
+                    b.Property<string>("Description").IsRequired().HasMaxLength(1000).HasColumnType("nvarchar(1000)");
+                    b.Property<string>("Gender").HasMaxLength(50).HasColumnType("nvarchar(50)");
+                    b.Property<string>("ImageUrl").IsRequired().HasMaxLength(500).HasColumnType("nvarchar(500)");
+                    b.Property<bool>("IsNew").ValueGeneratedOnAdd().HasColumnType("bit").HasDefaultValue(false);
+                    b.Property<int?>("ManufacturerId").HasColumnType("int");
+                    b.Property<string>("Name").IsRequired().HasMaxLength(200).HasColumnType("nvarchar(200)");
+                    b.Property<decimal?>("OriginalPrice").HasPrecision(18, 2).HasColumnType("decimal(18,2)");
+                    b.Property<decimal>("Price").HasPrecision(18, 2).HasColumnType("decimal(18,2)");
+                    b.Property<string>("Slug").HasMaxLength(200).HasColumnType("nvarchar(200)");
+                    b.Property<int>("Stock").HasColumnType("int");
                     b.HasKey("Id");
-
                     b.HasIndex("CategoryId");
-
                     b.HasIndex("ManufacturerId");
-
                     b.ToTable("Products");
-
                     b.HasData(
                         new { Id = 1,  Brand = "FormAsh",     CategoryId = 1, ManufacturerId = 1,  Description = "A relaxed-fit blazer with clean lines and comfortable layering for street-ready styling.",   Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80", IsNew = true,  Name = "Relaxed Blazer",      OriginalPrice = 1850000m, Price = 1450000m, Slug = "relaxed-blazer",      Stock = 16 },
                         new { Id = 2,  Brand = "Urban Chill", CategoryId = 2, ManufacturerId = 2,  Description = "Soft cotton tee with a subtle retro print and a relaxed silhouette.",                        Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80", IsNew = true,  Name = "Vintage Graphic Tee", OriginalPrice = 550000m,  Price = 420000m,  Slug = "vintage-graphic-tee", Stock = 38 },
@@ -240,101 +126,37 @@ namespace BaseCore.Repository.Migrations
 
             modelBuilder.Entity("BaseCore.Entities.User", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Contact")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<string>("Position")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<byte[]>("Salt")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<int>("UserType")
-                        .HasColumnType("int");
-
+                    b.Property<string>("Id").HasColumnType("nvarchar(450)");
+                    b.Property<string>("Contact").IsRequired().HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("Created").HasColumnType("datetime2");
+                    b.Property<string>("Email").IsRequired().HasMaxLength(100).HasColumnType("nvarchar(100)");
+                    b.Property<string>("Image").IsRequired().HasColumnType("nvarchar(max)");
+                    b.Property<bool>("IsActive").HasColumnType("bit");
+                    b.Property<string>("Name").IsRequired().HasMaxLength(100).HasColumnType("nvarchar(100)");
+                    b.Property<string>("Password").IsRequired().HasMaxLength(255).HasColumnType("nvarchar(255)");
+                    b.Property<string>("Phone").IsRequired().HasMaxLength(20).HasColumnType("nvarchar(20)");
+                    b.Property<string>("Position").IsRequired().HasColumnType("nvarchar(max)");
+                    b.Property<byte[]>("Salt").IsRequired().HasColumnType("varbinary(max)");
+                    b.Property<string>("UserName").IsRequired().HasMaxLength(50).HasColumnType("nvarchar(50)");
+                    b.Property<int>("UserType").HasColumnType("int");
                     b.HasKey("Id");
-
-                    b.HasIndex("UserName")
-                        .IsUnique();
-
+                    b.HasIndex("UserName").IsUnique();
                     b.ToTable("Users");
                 });
 
             modelBuilder.Entity("BaseCore.Entities.OrderDetail", b =>
                 {
-                    b.HasOne("BaseCore.Entities.Order", "Order")
-                        .WithMany("OrderDetails")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BaseCore.Entities.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
+                    b.HasOne("BaseCore.Entities.Order", "Order").WithMany("OrderDetails").HasForeignKey("OrderId").OnDelete(DeleteBehavior.Cascade).IsRequired();
+                    b.HasOne("BaseCore.Entities.Product", "Product").WithMany().HasForeignKey("ProductId").OnDelete(DeleteBehavior.Restrict).IsRequired();
                     b.Navigation("Order");
-
                     b.Navigation("Product");
                 });
 
             modelBuilder.Entity("BaseCore.Entities.Product", b =>
                 {
-                    b.HasOne("BaseCore.Entities.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("BaseCore.Entities.Manufacturer", "Manufacturer")
-                        .WithMany()
-                        .HasForeignKey("ManufacturerId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
+                    b.HasOne("BaseCore.Entities.Category", "Category").WithMany().HasForeignKey("CategoryId").OnDelete(DeleteBehavior.Restrict).IsRequired();
+                    b.HasOne("BaseCore.Entities.Manufacturer", "Manufacturer").WithMany().HasForeignKey("ManufacturerId").OnDelete(DeleteBehavior.SetNull);
                     b.Navigation("Category");
-
                     b.Navigation("Manufacturer");
                 });
 

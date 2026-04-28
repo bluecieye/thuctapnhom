@@ -10,6 +10,7 @@ namespace BaseCore.Repository.EFCore
     {
         Task<(List<Product> Products, int TotalCount)> SearchAsync(string? keyword, int? categoryId, int page, int pageSize);
         Task<List<Product>> GetByCategoryAsync(int categoryId);
+        Task<Product?> GetByIdWithIncludesAsync(int id);
     }
 
     public class ProductRepositoryEF : Repository<Product>, IProductRepositoryEF
@@ -20,7 +21,7 @@ namespace BaseCore.Repository.EFCore
 
         public async Task<(List<Product> Products, int TotalCount)> SearchAsync(string? keyword, int? categoryId, int page, int pageSize)
         {
-            var query = _dbSet.Include(p => p.Category).AsQueryable();
+            var query = _dbSet.Include(p => p.Category).Include(p => p.Manufacturer).AsQueryable();
 
             if (!string.IsNullOrEmpty(keyword))
             {
@@ -48,11 +49,20 @@ namespace BaseCore.Repository.EFCore
             return (products, totalCount);
         }
 
+        public async Task<Product?> GetByIdWithIncludesAsync(int id)
+        {
+            return await _dbSet
+                .Include(p => p.Category)
+                .Include(p => p.Manufacturer)
+                .FirstOrDefaultAsync(p => p.Id == id);
+        }
+
         public async Task<List<Product>> GetByCategoryAsync(int categoryId)
         {
             return await _dbSet
                 .Where(p => p.CategoryId == categoryId)
                 .Include(p => p.Category)
+                .Include(p => p.Manufacturer)
                 .ToListAsync();
         }
     }

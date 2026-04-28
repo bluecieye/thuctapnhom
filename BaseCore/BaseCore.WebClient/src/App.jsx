@@ -14,6 +14,7 @@ import StoreProducts from './pages/StoreProducts';
 import StoreProductDetail from './pages/StoreProductDetail';
 import StoreCart from './pages/StoreCart';
 import StoreOrders from './pages/StoreOrders';
+import Manufacturers from './pages/Manufacturers';
 
 function AppRoutes() {
     return (
@@ -60,6 +61,16 @@ function AppRoutes() {
                     <ProtectedRoute adminOnly={true}>
                         <MainLayout>
                             <Users />
+                        </MainLayout>
+                    </ProtectedRoute>
+                }
+            />
+            <Route
+                path="/admin/manufacturers"
+                element={
+                    <ProtectedRoute>
+                        <MainLayout>
+                            <Manufacturers />
                         </MainLayout>
                     </ProtectedRoute>
                 }

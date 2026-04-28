@@ -85,6 +85,12 @@ const MainLayout = ({ children }) => {
                                     <p>Categories</p>
                                 </Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to="/admin/manufacturers" className={`nav-link ${isActive('/admin/manufacturers')}`}>
+                                    <i className="nav-icon fas fa-industry"></i>
+                                    <p>Manufacturers</p>
+                                </Link>
+                            </li>
                             {isAdmin() && (
                                 <li className="nav-item">
                                     <Link to="/admin/users" className={`nav-link ${isActive('/admin/users')}`}>

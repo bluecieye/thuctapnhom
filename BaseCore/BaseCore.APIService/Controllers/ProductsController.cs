@@ -50,7 +50,7 @@ namespace BaseCore.APIService.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var product = await _productRepository.GetByIdAsync(id);
+            var product = await _productRepository.GetByIdWithIncludesAsync(id);
             if (product == null)
                 return NotFound(new { message = "Product not found" });
 
@@ -80,6 +80,7 @@ namespace BaseCore.APIService.Controllers
                 IsNew = dto.IsNew,
                 Stock = dto.Stock,
                 CategoryId = dto.CategoryId,
+                ManufacturerId = dto.ManufacturerId,
                 Description = dto.Description,
                 ImageUrl = dto.ImageUrl ?? ""
             };
@@ -108,6 +109,7 @@ namespace BaseCore.APIService.Controllers
             product.IsNew = dto.IsNew ?? product.IsNew;
             product.Stock = dto.Stock ?? product.Stock;
             product.CategoryId = dto.CategoryId ?? product.CategoryId;
+            product.ManufacturerId = dto.ManufacturerId;
             product.Description = dto.Description ?? product.Description;
             product.ImageUrl = dto.ImageUrl ?? product.ImageUrl;
 
@@ -153,6 +155,7 @@ namespace BaseCore.APIService.Controllers
         public bool IsNew { get; set; }
         public int Stock { get; set; }
         public int CategoryId { get; set; }
+        public int? ManufacturerId { get; set; }
         public string? Description { get; set; }
         public string? ImageUrl { get; set; }
     }
@@ -168,6 +171,7 @@ namespace BaseCore.APIService.Controllers
         public bool? IsNew { get; set; }
         public int? Stock { get; set; }
         public int? CategoryId { get; set; }
+        public int? ManufacturerId { get; set; }
         public string? Description { get; set; }
         public string? ImageUrl { get; set; }
     }

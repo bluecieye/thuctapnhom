@@ -4,6 +4,7 @@ using BaseCore.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BaseCore.Repository.Migrations
 {
     [DbContext(typeof(MySqlDbContext))]
-    partial class MySqlDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260318080000_AddManufacturers")]
+    partial class AddManufacturers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -226,10 +229,10 @@ namespace BaseCore.Repository.Migrations
                     b.ToTable("Products");
 
                     b.HasData(
-                        new { Id = 1,  Brand = "FormAsh",     CategoryId = 1, ManufacturerId = 1,  Description = "A relaxed-fit blazer with clean lines and comfortable layering for street-ready styling.",   Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80", IsNew = true,  Name = "Relaxed Blazer",      OriginalPrice = 1850000m, Price = 1450000m, Slug = "relaxed-blazer",      Stock = 16 },
+                        new { Id = 1,  Brand = "FormAsh",     CategoryId = 1, ManufacturerId = 1,  Description = "A relaxed-fit blazer with clean lines and comfortable layering for street-ready styling.",   Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1594938298603-c8148c4b4545?auto=format&fit=crop&w=900&q=80", IsNew = true,  Name = "Relaxed Blazer",      OriginalPrice = 1850000m, Price = 1450000m, Slug = "relaxed-blazer",      Stock = 16 },
                         new { Id = 2,  Brand = "Urban Chill", CategoryId = 2, ManufacturerId = 2,  Description = "Soft cotton tee with a subtle retro print and a relaxed silhouette.",                        Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80", IsNew = true,  Name = "Vintage Graphic Tee", OriginalPrice = 550000m,  Price = 420000m,  Slug = "vintage-graphic-tee", Stock = 38 },
                         new { Id = 3,  Brand = "StreetStep",  CategoryId = 3, ManufacturerId = 3,  Description = "Minimal sneakers built with durable leather and cushioning for all-day comfort.",            Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80", IsNew = false, Name = "Classic Sneakers",    OriginalPrice = 1080000m, Price = 980000m,  Slug = "classic-sneakers",    Stock = 24 },
-                        new { Id = 4,  Brand = "BlueAura",    CategoryId = 5, ManufacturerId = 4,  Description = "A classic denim jacket with a soft washed finish and durable stitching.",                    Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=80", IsNew = false, Name = "Denim Jacket",        OriginalPrice = 1490000m, Price = 1320000m, Slug = "denim-jacket",        Stock = 12 },
+                        new { Id = 4,  Brand = "BlueAura",    CategoryId = 5, ManufacturerId = 4,  Description = "A classic denim jacket with a soft washed finish and durable stitching.",                    Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1523381210434-271e8be8a52f?auto=format&fit=crop&w=900&q=80", IsNew = false, Name = "Denim Jacket",        OriginalPrice = 1490000m, Price = 1320000m, Slug = "denim-jacket",        Stock = 12 },
                         new { Id = 5,  Brand = "LoomLyfe",    CategoryId = 4, ManufacturerId = 5,  Description = "A spacious woven tote that combines casual style with everyday function.",                    Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80", IsNew = false, Name = "Woven Tote Bag",      OriginalPrice = 620000m,  Price = 520000m,  Slug = "woven-tote-bag",      Stock = 45 },
                         new { Id = 6,  Brand = "Denim House", CategoryId = 5, ManufacturerId = 6,  Description = "Relaxed wide-leg jeans with a high-rise waist for a modern silhouette.",                     Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80", IsNew = false, Name = "Wide Leg Jeans",      OriginalPrice = 1100000m, Price = 960000m,  Slug = "wide-leg-jeans",      Stock = 30 },
                         new { Id = 7,  Brand = "Rainform",    CategoryId = 1, ManufacturerId = 7,  Description = "Oversized trench coat with water-resistant finish and modern utility details.",               Gender = "Unisex", ImageUrl = "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=900&q=80", IsNew = true,  Name = "Utility Trench Coat", OriginalPrice = 2250000m, Price = 1850000m, Slug = "utility-trench-coat", Stock = 20 },

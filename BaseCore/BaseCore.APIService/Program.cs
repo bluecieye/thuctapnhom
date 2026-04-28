@@ -70,11 +70,12 @@ builder.Services.AddDbContext<MySqlDbContext>(options =>
 });
 
 
-// Repository Registration - Products, Categories, Orders
+// Repository Registration - Products, Categories, Orders, Manufacturers
 builder.Services.AddScoped<IProductRepositoryEF, ProductRepositoryEF>();
 builder.Services.AddScoped<ICategoryRepositoryEF, CategoryRepositoryEF>();
 builder.Services.AddScoped<IOrderRepositoryEF, OrderRepositoryEF>();
 builder.Services.AddScoped<IOrderDetailRepositoryEF, OrderDetailRepositoryEF>();
+builder.Services.AddScoped<IManufacturerRepositoryEF, ManufacturerRepositoryEF>();
 
 // JWT Authentication
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:SecretKey"] ?? "YourSecretKeyForAuthenticationShouldBeLongEnough");
