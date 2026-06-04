@@ -1,59 +1,44 @@
 
 
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using BaseCore.Entities;
 
 namespace BaseCore.Services
 {
     // ════════════════════════════════════════════════════════════
-    // INTERFACE SERVICE SẢN PHẨM
+    // INTERFACE SERVICE GIỎ HÀNG
     // ════════════════════════════════════════════════════════════
 
     // ════════════════════════════════════════════════════════════
-    // PRODUCT SERVICE — INTERFACE
+    // CART SERVICE — INTERFACE
     // ════════════════════════════════════════════════════════════
-    public interface IProductService
+    public interface ICartService
     {
 
         
 
         
+        Task<Cart> GetCartAsync(int userId);
 
         
 
         
 
         
+        
+        Task<Cart> AddItemAsync(int userId, int variantId, int quantity);
 
         
 
         
+        Task<Cart> UpdateItemAsync(int userId, int cartItemId, int quantity);
 
         
-        Task<(List<Product> Items, int TotalCount, decimal PriceMin, decimal PriceMax)> SearchAsync(
-            string? keyword, int? categoryId, List<int>? categoryIds,
-            string? gender, string? season,
-            decimal? minPrice, decimal? maxPrice,
-            int? sizeId, int? colorId, bool inStockOnly,
-            bool newOnly,
-            string? sortBy,
-            int page, int pageSize);
-
-        Task<Product?> GetByIdAsync(int id);
-
-        Task<List<Product>> GetNewArrivalsAsync(int limit);
-
-        Task<List<Product>> GetBestSellersAsync(int limit);
+        
+        Task<Cart> RemoveItemAsync(int userId, int cartItemId);
 
         
-
         
-        Task<Product> CreateAsync(Product product);
-
-        
-        Task UpdateAsync(Product product);
-
-        Task DeleteAsync(int id);
+        Task ClearAsync(int userId);
     }
 }

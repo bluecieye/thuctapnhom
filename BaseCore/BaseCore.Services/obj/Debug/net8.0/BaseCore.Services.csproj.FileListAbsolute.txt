@@ -159,3 +159,95 @@ C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore
 C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Services\obj\Debug\net8.0\refint\BaseCore.Services.dll
 C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.pdb
 C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Services\obj\Debug\net8.0\ref\BaseCore.Services.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\refint\BaseCore.Services.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.deps.json
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.csproj.AssemblyReference.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.AssemblyInfoInputs.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.AssemblyInfo.cs
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.csproj.CoreCompileInputs.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.A71D4B49.Up2Date
+D:\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\ref\BaseCore.Services.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\refint\BaseCore.Services.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.deps.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Common.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Entities.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Libs.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Common.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Entities.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Libs.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.csproj.AssemblyReference.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.AssemblyInfoInputs.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.AssemblyInfo.cs
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.csproj.CoreCompileInputs.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.A71D4B49.Up2Date
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Services\obj\Debug\net8.0\ref\BaseCore.Services.dll
+D:\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.dll
+D:\BaseCore\BaseCore.Services\obj\Debug\net8.0\refint\BaseCore.Services.dll
+D:\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.pdb
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.deps.json
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.dll
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.pdb
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore\BaseCore.Services\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.csproj.AssemblyReference.cache
+D:\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.AssemblyInfoInputs.cache
+D:\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.AssemblyInfo.cs
+D:\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.csproj.CoreCompileInputs.cache
+D:\BaseCore\BaseCore.Services\obj\Debug\net8.0\BaseCore.A71D4B49.Up2Date
+D:\BaseCore\BaseCore.Services\obj\Debug\net8.0\ref\BaseCore.Services.dll
+D:\BaseCore0\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.dll
+D:\BaseCore0\BaseCore.Services\obj\Debug\net8.0\refint\BaseCore.Services.dll
+D:\BaseCore0\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.pdb
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.deps.json
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.dll
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Services.pdb
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore0\BaseCore.Services\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseCore0\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.csproj.AssemblyReference.cache
+D:\BaseCore0\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore0\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.AssemblyInfoInputs.cache
+D:\BaseCore0\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.AssemblyInfo.cs
+D:\BaseCore0\BaseCore.Services\obj\Debug\net8.0\BaseCore.Services.csproj.CoreCompileInputs.cache
+D:\BaseCore0\BaseCore.Services\obj\Debug\net8.0\BaseCore.A71D4B49.Up2Date
+D:\BaseCore0\BaseCore.Services\obj\Debug\net8.0\ref\BaseCore.Services.dll

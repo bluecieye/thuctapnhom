@@ -7,53 +7,50 @@ using BaseCore.Entities;
 namespace BaseCore.Services
 {
     // ════════════════════════════════════════════════════════════
-    // INTERFACE SERVICE SẢN PHẨM
+    // INTERFACE SERVICE ĐỊA CHỈ
     // ════════════════════════════════════════════════════════════
 
     // ════════════════════════════════════════════════════════════
-    // PRODUCT SERVICE — INTERFACE
+    // ADDRESS SERVICE — INTERFACE
     // ════════════════════════════════════════════════════════════
-    public interface IProductService
+    public interface IAddressService
     {
 
         
 
         
+        Task<List<Address>> GetByUserAsync(int userId);
+
+        
+
+        
+        
+        Task<Address?> GetByIdAsync(int id);
 
         
 
         
 
         
+        Task<Address> CreateAsync(Address address);
 
         
 
         
-
         
-        Task<(List<Product> Items, int TotalCount, decimal PriceMin, decimal PriceMax)> SearchAsync(
-            string? keyword, int? categoryId, List<int>? categoryIds,
-            string? gender, string? season,
-            decimal? minPrice, decimal? maxPrice,
-            int? sizeId, int? colorId, bool inStockOnly,
-            bool newOnly,
-            string? sortBy,
-            int page, int pageSize);
-
-        Task<Product?> GetByIdAsync(int id);
-
-        Task<List<Product>> GetNewArrivalsAsync(int limit);
-
-        Task<List<Product>> GetBestSellersAsync(int limit);
+        Task UpdateAsync(Address address);
 
         
 
         
-        Task<Product> CreateAsync(Product product);
-
-        
-        Task UpdateAsync(Product product);
 
         Task DeleteAsync(int id);
+
+        
+
+        
+
+        
+        Task SetDefaultAsync(int userId, int addressId);
     }
 }

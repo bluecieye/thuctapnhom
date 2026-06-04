@@ -1,51 +1,72 @@
 
 
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using BaseCore.Common.Helpers;
 using BaseCore.Entities;
-using BaseCore.Repository;
 using BaseCore.Repository.EFCore;
 
 namespace BaseCore.Services
 {
     // ════════════════════════════════════════════════════════════
-    // SERVICE SẢN PHẨM
+    // SERVICE ĐÁNH GIÁ
     // ════════════════════════════════════════════════════════════
 
     // ════════════════════════════════════════════════════════════
-    // PRODUCT SERVICE — IMPLEMENTATION
+    // REVIEW SERVICE — IMPLEMENTATION
     // ════════════════════════════════════════════════════════════
-    public class ProductService : IProductService
+    public class ReviewService : IReviewService
     {
         // ════════════════════════════════════════════════════════════
-        // BIẾN THÀNH VIÊN
+        // BIẾN & HÀM KHỞI TẠO
         // ════════════════════════════════════════════════════════════
 
         // ════════════════════════════════════════════════════════════
         // FIELDS
         // ════════════════════════════════════════════════════════════
-        private readonly IProductRepositoryEF _repo;
-
-        private readonly MySqlDbContext _ctx;
-
-        // ════════════════════════════════════════════════════════════
-        // HÀM KHỞI TẠO
-        // ════════════════════════════════════════════════════════════
+        private readonly IReviewRepositoryEF _repo;
 
         // ════════════════════════════════════════════════════════════
         // CONSTRUCTOR
         // ════════════════════════════════════════════════════════════
-        public ProductService(IProductRepositoryEF repo, MySqlDbContext ctx)
+        public ReviewService(IReviewRepositoryEF repo) { _repo = repo; }
+
+        
+
+        
+
+        
+
+        
+        
+        // ════════════════════════════════════════════════════════════
+        // PHƯƠNG THỨC THAY ĐỔI
+        // ════════════════════════════════════════════════════════════
+
+        // ════════════════════════════════════════════════════════════
+        // CREATE REVIEW
+        // ════════════════════════════════════════════════════════════
+        public async Task<Review> CreateAsync(CreateReviewRequest request)
         {
-            _repo = repo;
-            _ctx = ctx;
+            
+            if (request.Rating < 1 || request.Rating > 5)
+                throw new InvalidOperationException("Rating phải từ 1 đến 5.");
+            if (request.SizeAccuracy < 1 || request.SizeAccuracy > 5)
+                throw new InvalidOperationException("SizeAccuracy phải từ 1 đến 5.");
+
+            var review = new Review
+            {
+                UserId = request.UserId,
+                ProductId = request.ProductId,
+                Rating = request.Rating,
+                Comment = request.Comment,
+                ImageUrl = request.ImageUrl,
+                SizeAccuracy = request.SizeAccuracy,
+                CreatedAt = DateTime.UtcNow
+            };
+            return await _repo.AddAsync(review);
         }
 
-        
-
-        
         // ════════════════════════════════════════════════════════════
         // PHƯƠNG THỨC TRUY VẤN
         // ════════════════════════════════════════════════════════════
@@ -53,101 +74,21 @@ namespace BaseCore.Services
         // ════════════════════════════════════════════════════════════
         // QUERY METHODS
         // ════════════════════════════════════════════════════════════
-        public Task<(List<Product> Items, int TotalCount, decimal PriceMin, decimal PriceMax)> SearchAsync(
-            string? keyword, int? categoryId, List<int>? categoryIds,
-            string? gender, string? season,
-            decimal? minPrice, decimal? maxPrice,
-            int? sizeId, int? colorId, bool inStockOnly,
-            bool newOnly,
-            string? sortBy,
-            int page, int pageSize)
-            => _repo.SearchAsync(keyword, categoryId, categoryIds, gender, season,
-                minPrice, maxPrice, sizeId, colorId, inStockOnly, newOnly, sortBy, page, pageSize);
+        public Task<List<Review>> GetByProductAsync(int productId) => _repo.GetByProductAsync(productId);
 
-        public Task<Product?> GetByIdAsync(int id) => _repo.GetByIdWithDetailsAsync(id);
+        public Task<List<Review>> GetAllAdminAsync(int page, int pageSize) => _repo.GetAllAdminAsync(page, pageSize);
 
-        public Task<List<Product>> GetNewArrivalsAsync(int limit) => _repo.GetNewArrivalsAsync(limit);
+        public Task<int> CountAllAsync() => _repo.CountAllAsync();
 
-        public Task<List<Product>> GetBestSellersAsync(int limit) => _repo.GetBestSellersAsync(limit);
+        public Task<(double Average, int Count)> GetSummaryAsync(int productId) => _repo.GetRatingSummaryAsync(productId);
 
-        
-
-        
-
-        
-
-        
-
-        
-        
         // ════════════════════════════════════════════════════════════
-        // TẠO SẢN PHẨM
+        // XOÁ ĐÁNH GIÁ
         // ════════════════════════════════════════════════════════════
 
         // ════════════════════════════════════════════════════════════
-        // CREATE PRODUCT
+        // DELETE REVIEW
         // ════════════════════════════════════════════════════════════
-        public async Task<Product> CreateAsync(Product product)
-        {
-            product.CreatedAt = System.DateTime.UtcNow;
-            product.Slug = await EnsureUniqueSlugAsync(
-                string.IsNullOrWhiteSpace(product.Slug) ? SlugHelper.Generate(product.Name) : SlugHelper.Generate(product.Slug),
-                excludeId: null);
-            return await _repo.AddAsync(product);
-        }
-
-        
-
-        
-
-        
-        
-        // ════════════════════════════════════════════════════════════
-        // CẬP NHẬT / XOÁ SẢN PHẨM
-        // ════════════════════════════════════════════════════════════
-
-        // ════════════════════════════════════════════════════════════
-        // UPDATE / DELETE PRODUCT
-        // ════════════════════════════════════════════════════════════
-        public async Task UpdateAsync(Product product)
-        {
-            if (!string.IsNullOrWhiteSpace(product.Slug))
-                product.Slug = await EnsureUniqueSlugAsync(SlugHelper.Generate(product.Slug), excludeId: product.Id);
-            await _repo.UpdateAsync(product);
-        }
-
-        public Task DeleteAsync(int id) => _repo.DeleteByIdAsync(id);
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-        
-        // ════════════════════════════════════════════════════════════
-        // HÀM PHỤ TRỢ NỘI BỘ
-        // ════════════════════════════════════════════════════════════
-
-        // ════════════════════════════════════════════════════════════
-        // SLUG HELPERS
-        // ════════════════════════════════════════════════════════════
-        private async Task<string> EnsureUniqueSlugAsync(string baseSlug, int? excludeId)
-        {
-            if (string.IsNullOrWhiteSpace(baseSlug)) baseSlug = "san-pham";
-            var slug = baseSlug;
-            var i = 2;
-            
-            while (await _ctx.Products.AnyAsync(p => p.Slug == slug && (excludeId == null || p.Id != excludeId)))
-            {
-                slug = $"{baseSlug}-{i++}";  
-            }
-            return slug;
-        }
+        public Task DeleteAsync(int reviewId) => _repo.DeleteByIdAsync(reviewId);
     }
 }

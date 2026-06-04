@@ -2,22 +2,19 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using BaseCore.Common.Helpers;
 using BaseCore.Entities;
-using BaseCore.Repository;
 using BaseCore.Repository.EFCore;
 
 namespace BaseCore.Services
 {
     // ════════════════════════════════════════════════════════════
-    // SERVICE SẢN PHẨM
+    // SERVICE ĐỊA CHỈ
     // ════════════════════════════════════════════════════════════
 
     // ════════════════════════════════════════════════════════════
-    // PRODUCT SERVICE — IMPLEMENTATION
+    // ADDRESS SERVICE — IMPLEMENTATION
     // ════════════════════════════════════════════════════════════
-    public class ProductService : IProductService
+    public class AddressService : IAddressService
     {
         // ════════════════════════════════════════════════════════════
         // BIẾN THÀNH VIÊN
@@ -26,9 +23,7 @@ namespace BaseCore.Services
         // ════════════════════════════════════════════════════════════
         // FIELDS
         // ════════════════════════════════════════════════════════════
-        private readonly IProductRepositoryEF _repo;
-
-        private readonly MySqlDbContext _ctx;
+        private readonly IAddressRepositoryEF _repo;
 
         // ════════════════════════════════════════════════════════════
         // HÀM KHỞI TẠO
@@ -37,11 +32,7 @@ namespace BaseCore.Services
         // ════════════════════════════════════════════════════════════
         // CONSTRUCTOR
         // ════════════════════════════════════════════════════════════
-        public ProductService(IProductRepositoryEF repo, MySqlDbContext ctx)
-        {
-            _repo = repo;
-            _ctx = ctx;
-        }
+        public AddressService(IAddressRepositoryEF repo) { _repo = repo; }
 
         
 
@@ -53,22 +44,11 @@ namespace BaseCore.Services
         // ════════════════════════════════════════════════════════════
         // QUERY METHODS
         // ════════════════════════════════════════════════════════════
-        public Task<(List<Product> Items, int TotalCount, decimal PriceMin, decimal PriceMax)> SearchAsync(
-            string? keyword, int? categoryId, List<int>? categoryIds,
-            string? gender, string? season,
-            decimal? minPrice, decimal? maxPrice,
-            int? sizeId, int? colorId, bool inStockOnly,
-            bool newOnly,
-            string? sortBy,
-            int page, int pageSize)
-            => _repo.SearchAsync(keyword, categoryId, categoryIds, gender, season,
-                minPrice, maxPrice, sizeId, colorId, inStockOnly, newOnly, sortBy, page, pageSize);
+        public Task<List<Address>> GetByUserAsync(int userId) => _repo.GetByUserAsync(userId);
 
-        public Task<Product?> GetByIdAsync(int id) => _repo.GetByIdWithDetailsAsync(id);
-
-        public Task<List<Product>> GetNewArrivalsAsync(int limit) => _repo.GetNewArrivalsAsync(limit);
-
-        public Task<List<Product>> GetBestSellersAsync(int limit) => _repo.GetBestSellersAsync(limit);
+        
+        
+        public Task<Address?> GetByIdAsync(int id) => _repo.GetByIdAsync(id);
 
         
 
@@ -78,76 +58,53 @@ namespace BaseCore.Services
 
         
 
-        
         
         // ════════════════════════════════════════════════════════════
-        // TẠO SẢN PHẨM
+        // PHƯƠNG THỨC THAY ĐỔI
         // ════════════════════════════════════════════════════════════
 
         // ════════════════════════════════════════════════════════════
-        // CREATE PRODUCT
+        // CREATE / UPDATE / DELETE
         // ════════════════════════════════════════════════════════════
-        public async Task<Product> CreateAsync(Product product)
+        public async Task<Address> CreateAsync(Address address)
         {
-            product.CreatedAt = System.DateTime.UtcNow;
-            product.Slug = await EnsureUniqueSlugAsync(
-                string.IsNullOrWhiteSpace(product.Slug) ? SlugHelper.Generate(product.Name) : SlugHelper.Generate(product.Slug),
-                excludeId: null);
-            return await _repo.AddAsync(product);
-        }
-
-        
-
-        
-
-        
-        
-        // ════════════════════════════════════════════════════════════
-        // CẬP NHẬT / XOÁ SẢN PHẨM
-        // ════════════════════════════════════════════════════════════
-
-        // ════════════════════════════════════════════════════════════
-        // UPDATE / DELETE PRODUCT
-        // ════════════════════════════════════════════════════════════
-        public async Task UpdateAsync(Product product)
-        {
-            if (!string.IsNullOrWhiteSpace(product.Slug))
-                product.Slug = await EnsureUniqueSlugAsync(SlugHelper.Generate(product.Slug), excludeId: product.Id);
-            await _repo.UpdateAsync(product);
-        }
-
-        public Task DeleteAsync(int id) => _repo.DeleteByIdAsync(id);
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-        
-        // ════════════════════════════════════════════════════════════
-        // HÀM PHỤ TRỢ NỘI BỘ
-        // ════════════════════════════════════════════════════════════
-
-        // ════════════════════════════════════════════════════════════
-        // SLUG HELPERS
-        // ════════════════════════════════════════════════════════════
-        private async Task<string> EnsureUniqueSlugAsync(string baseSlug, int? excludeId)
-        {
-            if (string.IsNullOrWhiteSpace(baseSlug)) baseSlug = "san-pham";
-            var slug = baseSlug;
-            var i = 2;
             
-            while (await _ctx.Products.AnyAsync(p => p.Slug == slug && (excludeId == null || p.Id != excludeId)))
-            {
-                slug = $"{baseSlug}-{i++}";  
-            }
-            return slug;
+            var existing = await _repo.GetByUserAsync(address.UserId);
+
+            if (existing.Count == 0) address.IsDefault = true;
+
+            var saved = await _repo.AddAsync(address);
+
+            
+            
+            if (address.IsDefault) await _repo.SetDefaultAsync(address.UserId, saved.Id);
+
+            return saved;
         }
+
+        
+
+        public Task UpdateAsync(Address address) => _repo.UpdateAsync(address);
+
+        
+
+        
+
+        public async Task DeleteAsync(int id)
+        {
+            var addr = await _repo.GetByIdAsync(id);
+            if (addr != null) await _repo.DeleteAsync(addr);
+        }
+
+        
+
+        // ════════════════════════════════════════════════════════════
+        // ĐẶT ĐỊA CHỈ MẶC ĐỊNH
+        // ════════════════════════════════════════════════════════════
+
+        // ════════════════════════════════════════════════════════════
+        // SET DEFAULT
+        // ════════════════════════════════════════════════════════════
+        public Task SetDefaultAsync(int userId, int addressId) => _repo.SetDefaultAsync(userId, addressId);
     }
 }

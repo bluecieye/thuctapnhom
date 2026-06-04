@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {
       "AutoMapper/13.0.1": {
@@ -3224,23 +3224,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus G15\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Hoang Nhat\\.nuget\\packages\\": {},
+    "D:\\SSMS utils\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj",
+      "projectUniqueName": "D:\\BaseCore0\\BaseCore.Services\\BaseCore.Services.csproj",
       "projectName": "BaseCore.Services",
-      "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj",
-      "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.Services\\obj\\",
+      "projectPath": "D:\\BaseCore0\\BaseCore.Services\\BaseCore.Services.csproj",
+      "packagesPath": "C:\\Users\\Hoang Nhat\\.nuget\\packages\\",
+      "outputPath": "D:\\BaseCore0\\BaseCore.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\SSMS utils\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Asus G15\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hoang Nhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3249,24 +3249,24 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
-              "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
+            "D:\\BaseCore0\\BaseCore.Common\\BaseCore.Common.csproj": {
+              "projectPath": "D:\\BaseCore0\\BaseCore.Common\\BaseCore.Common.csproj"
             },
-            "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
-              "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj"
+            "D:\\BaseCore0\\BaseCore.DTO\\BaseCore.DTO.csproj": {
+              "projectPath": "D:\\BaseCore0\\BaseCore.DTO\\BaseCore.DTO.csproj"
             },
-            "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
-              "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj"
+            "D:\\BaseCore0\\BaseCore.Entities\\BaseCore.Entities.csproj": {
+              "projectPath": "D:\\BaseCore0\\BaseCore.Entities\\BaseCore.Entities.csproj"
             },
-            "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj": {
-              "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj"
+            "D:\\BaseCore0\\BaseCore.Repository\\BaseCore.Repository.csproj": {
+              "projectPath": "D:\\BaseCore0\\BaseCore.Repository\\BaseCore.Repository.csproj"
             }
           }
         }
@@ -3281,10 +3281,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Quartz": {
@@ -3312,7 +3313,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300-preview.0.26177.108/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

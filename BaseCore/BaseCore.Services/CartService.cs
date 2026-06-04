@@ -1,191 +1,164 @@
 
 
-using BaseCore.Common;
-using BaseCore.Entities;
-using BaseCore.Repository.EFCore;
 using System;
-using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using BaseCore.Entities;
+using BaseCore.Repository;
+using BaseCore.Repository.EFCore;
 
-namespace BaseCore.Services.Authen
+namespace BaseCore.Services
 {
     // ════════════════════════════════════════════════════════════
-    // INTERFACE SERVICE NGƯỜI DÙNG
+    // SERVICE GIỎ HÀNG
     // ════════════════════════════════════════════════════════════
 
     // ════════════════════════════════════════════════════════════
-    // USER SERVICE — INTERFACE
+    // CART SERVICE — IMPLEMENTATION
     // ════════════════════════════════════════════════════════════
-    public interface IUserService
-    {
-
-        
-        
-        Task<User?> Authenticate(string username, string password);
-
-        Task<List<User>> GetAll();
-
-        Task<User?> GetById(int id);
-
-        Task<User?> GetByUsername(string username);
-
-        
-        Task<User> Create(User user, string password);
-
-        Task Update(User user, string? password = null);
-
-        Task Delete(int id);
-
-        
-        
-        Task<(List<User> Users, int TotalCount)> Search(
-            string? keyword, int page, int pageSize, string? role = null, bool? isActive = null);
-    }
-
-    // ════════════════════════════════════════════════════════════
-    // SERVICE NGƯỜI DÙNG
-    // ════════════════════════════════════════════════════════════
-
-    // ════════════════════════════════════════════════════════════
-    // USER SERVICE — IMPLEMENTATION
-    // ════════════════════════════════════════════════════════════
-    public class UserService : IUserService
+    public class CartService : ICartService
     {
         // ════════════════════════════════════════════════════════════
-        // BIẾN & HÀM KHỞI TẠO
+        // BIẾN THÀNH VIÊN
         // ════════════════════════════════════════════════════════════
 
         // ════════════════════════════════════════════════════════════
         // FIELDS
         // ════════════════════════════════════════════════════════════
-        private readonly IUserRepositoryEF _repo;
+        private readonly MySqlDbContext _context;
+
+        private readonly ICartRepositoryEF _repo;
+
+        // ════════════════════════════════════════════════════════════
+        // HÀM KHỞI TẠO
+        // ════════════════════════════════════════════════════════════
 
         // ════════════════════════════════════════════════════════════
         // CONSTRUCTOR
         // ════════════════════════════════════════════════════════════
-        public UserService(IUserRepositoryEF repo) { _repo = repo; }
+        public CartService(MySqlDbContext context, ICartRepositoryEF repo)
+        {
+            _context = context;
+            _repo = repo;
+        }
 
-        
-
-        
-
-        
-
-        
-
-        
         // ════════════════════════════════════════════════════════════
-        // ĐĂNG NHẬP / XÁC THỰC
+        // LẤY GIỎ HÀNG
         // ════════════════════════════════════════════════════════════
 
         // ════════════════════════════════════════════════════════════
-        // LOGIN / JWT
+        // GET CART
         // ════════════════════════════════════════════════════════════
-        public async Task<User?> Authenticate(string username, string password)
+        public async Task<Cart> GetCartAsync(int userId)
+        {
+            await _repo.GetOrCreateByUserAsync(userId);
+            return (await _repo.GetWithItemsAsync(userId))!;
+        }
+
+        // ════════════════════════════════════════════════════════════
+        // THÊM SẢN PHẨM VÀO GIỎ
+        // ════════════════════════════════════════════════════════════
+
+        // ════════════════════════════════════════════════════════════
+        // ADD ITEM
+        // ════════════════════════════════════════════════════════════
+        public async Task<Cart> AddItemAsync(int userId, int variantId, int quantity)
         {
             
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password)) return null;
+            if (quantity <= 0) throw new InvalidOperationException("Số lượng phải lớn hơn 0.");
 
-            var user = await _repo.GetByUsernameAsync(username);
-            if (user == null || !user.IsActive) return null;
+            var variant = await _context.ProductVariants.FindAsync(variantId)
+                ?? throw new InvalidOperationException("Biến thể sản phẩm không tồn tại.");
 
             
-            var ok = !string.IsNullOrEmpty(user.Salt)
-                ? TokenHelper.IsValidPassword(password, user.Salt, user.PasswordHash)
-                : user.PasswordHash == password; 
+            if (variant.Stock - variant.ReservedStock < quantity)
+                throw new InvalidOperationException("Không đủ tồn kho.");
 
-            return ok ? user : null;
-        }
+            var cart = await _repo.GetOrCreateByUserAsync(userId);
 
-        
+            var existing = await _context.CartItems
+                .FirstOrDefaultAsync(i => i.CartId == cart.Id && i.VariantId == variantId);
 
-        // ════════════════════════════════════════════════════════════
-        // PHƯƠNG THỨC TRUY VẤN
-        // ════════════════════════════════════════════════════════════
-
-        // ════════════════════════════════════════════════════════════
-        // QUERY METHODS
-        // ════════════════════════════════════════════════════════════
-        public async Task<List<User>> GetAll() => (await _repo.GetAllAsync()).ToList();
-
-        public Task<User?> GetById(int id) => _repo.GetByIdAsync(id);
-
-        public Task<User?> GetByUsername(string username) => _repo.GetByUsernameAsync(username);
-
-        
-
-        
-
-        
-        // ════════════════════════════════════════════════════════════
-        // ĐĂNG KÝ TÀI KHOẢN
-        // ════════════════════════════════════════════════════════════
-
-        // ════════════════════════════════════════════════════════════
-        // REGISTRATION
-        // ════════════════════════════════════════════════════════════
-        public async Task<User> Create(User user, string password)
-        {
-            user.PasswordHash = TokenHelper.HashPassword(password, out string salt);
-            user.Salt = salt;
-            user.CreatedAt = DateTime.UtcNow;
-            user.IsActive = true;
-            return await _repo.AddAsync(user);
-        }
-
-        
-
-        
-        
-        // ════════════════════════════════════════════════════════════
-        // CẬP NHẬT & XỬ LÝ MẬT KHẨU
-        // ════════════════════════════════════════════════════════════
-
-        // ════════════════════════════════════════════════════════════
-        // PASSWORD HELPERS
-        // ════════════════════════════════════════════════════════════
-        public async Task Update(User user, string? password = null)
-        {
-            if (!string.IsNullOrEmpty(password))
+            if (existing != null)
             {
-                user.PasswordHash = TokenHelper.HashPassword(password, out string salt);
-                user.Salt = salt;
+                
+                existing.Quantity += quantity;
             }
-            await _repo.UpdateAsync(user);
-        }
-
-        
-
-        
-        
-        // ════════════════════════════════════════════════════════════
-        // XOÁ NGƯỜI DÙNG
-        // ════════════════════════════════════════════════════════════
-
-        // ════════════════════════════════════════════════════════════
-        // DELETE USER
-        // ════════════════════════════════════════════════════════════
-        public async Task Delete(int id)
-        {
-            var user = await _repo.GetByIdAsync(id);
-            if (user != null)
+            else
             {
-                user.IsActive = false;
-                await _repo.UpdateAsync(user);
+                
+                _context.CartItems.Add(new CartItem
+                {
+                    CartId = cart.Id,
+                    VariantId = variantId,
+                    Quantity = quantity
+                });
             }
+
+            cart.UpdatedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+            return (await _repo.GetWithItemsAsync(userId))!;
         }
 
-        
-
         // ════════════════════════════════════════════════════════════
-        // TÌM KIẾM NGƯỜI DÙNG
+        // CẬP NHẬT SỐ LƯỢNG
         // ════════════════════════════════════════════════════════════
 
         // ════════════════════════════════════════════════════════════
-        // SEARCH
+        // UPDATE ITEM
         // ════════════════════════════════════════════════════════════
-        public Task<(List<User> Users, int TotalCount)> Search(
-            string? keyword, int page, int pageSize, string? role = null, bool? isActive = null)
-            => _repo.SearchAsync(keyword, role, isActive, page, pageSize);
+        public async Task<Cart> UpdateItemAsync(int userId, int cartItemId, int quantity)
+        {
+            if (quantity <= 0) throw new InvalidOperationException("Số lượng phải lớn hơn 0.");
+
+            var cart = await _repo.GetOrCreateByUserAsync(userId);
+
+            
+            var item = await _context.CartItems
+                .Include(i => i.Variant)
+                .FirstOrDefaultAsync(i => i.Id == cartItemId && i.CartId == cart.Id)
+                ?? throw new InvalidOperationException("Mục giỏ hàng không tồn tại.");
+
+            if (item.Variant.Stock - item.Variant.ReservedStock < quantity)
+                throw new InvalidOperationException("Không đủ tồn kho.");
+
+            item.Quantity = quantity;
+            cart.UpdatedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+            return (await _repo.GetWithItemsAsync(userId))!;
+        }
+
+        // ════════════════════════════════════════════════════════════
+        // XOÁ SẢN PHẨM KHỎI GIỎ
+        // ════════════════════════════════════════════════════════════
+
+        // ════════════════════════════════════════════════════════════
+        // REMOVE ITEM
+        // ════════════════════════════════════════════════════════════
+        public async Task<Cart> RemoveItemAsync(int userId, int cartItemId)
+        {
+            var cart = await _repo.GetOrCreateByUserAsync(userId);
+            var item = await _context.CartItems
+                .FirstOrDefaultAsync(i => i.Id == cartItemId && i.CartId == cart.Id);
+            if (item != null)
+            {
+                _context.CartItems.Remove(item);
+                cart.UpdatedAt = DateTime.UtcNow;
+                await _context.SaveChangesAsync();
+            }
+            return (await _repo.GetWithItemsAsync(userId))!;
+        }
+
+        // ════════════════════════════════════════════════════════════
+        // XOÁ TOÀN BỘ GIỎ HÀNG
+        // ════════════════════════════════════════════════════════════
+
+        // ════════════════════════════════════════════════════════════
+        // CLEAR CART
+        // ════════════════════════════════════════════════════════════
+        public Task ClearAsync(int userId) => _repo.ClearAsync(userId);
     }
 }
