@@ -2,91 +2,59 @@
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
+using System.Security.Claims;
 using BaseCore.Entities;
-
-using BaseCore.Services;
+using BaseCore.Repository.EFCore;
 
 namespace BaseCore.APIService.Controllers
 {
     // ════════════════════════════════════════════════════════════
-    // CONTROLLER DANH MỤC
+    // CONTROLLER DANH SÁCH YÊU THÍCH
     // ════════════════════════════════════════════════════════════
     [ApiController]
+    [Route("api/wishlist")]
 
-    [Route("api/categories")]
-
-    public class CategoriesController : ControllerBase
+    [Authorize]
+    public class WishlistController : ControllerBase
     {
         // ════════════════════════════════════════════════════════════
         // BIẾN & HÀM KHỞI TẠO
         // ════════════════════════════════════════════════════════════
-        private readonly ICategoryService _service;
+        private readonly IWishlistRepositoryEF _repo;
+        public WishlistController(IWishlistRepositoryEF repo) { _repo = repo; }
 
-        public CategoriesController(ICategoryService service) { _service = service; }
-
-
+        private int CurrentUserId
+            => int.TryParse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value, out var id) ? id : 0;
 
         // ════════════════════════════════════════════════════════════
-        // [GET] DANH SÁCH & CHI TIẾT
+        // LẤY DANH SÁCH / CHI TIẾT (GET)
         // ════════════════════════════════════════════════════════════
         [HttpGet]
-        public async Task<IActionResult> Get() => Ok(await _service.GetAllAsync());
-
-        
-
-        
-        
-        [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetById(int id)
-        {
-            var c = await _service.GetByIdAsync(id);
-            
-            return c == null ? NotFound() : Ok(c);
-        }
-
-
+        public async Task<IActionResult> GetMine() => Ok(await _repo.GetByUserAsync(CurrentUserId));
 
         // ════════════════════════════════════════════════════════════
-        // [POST] TẠO MỚI
+        // TẠO MỚI (POST)
         // ════════════════════════════════════════════════════════════
-        [HttpPost]
-        [Authorize(Roles = "Admin,Marketing")]
-        public async Task<IActionResult> Create([FromBody] Category category)
+        [HttpPost("{productId:int}")]
+        public async Task<IActionResult> Add(int productId)
         {
-            var saved = await _service.CreateAsync(category);
             
-            return CreatedAtAction(nameof(GetById), new { id = saved.Id }, saved);
+            if (await _repo.ExistsAsync(CurrentUserId, productId))
+                return Ok(new { message = "Đã có trong wishlist." });
+            
+            await _repo.AddAsync(new Wishlist { UserId = CurrentUserId, ProductId = productId });
+            return Ok(new { message = "Đã thêm vào wishlist." });
         }
 
         
 
-        
-        
         // ════════════════════════════════════════════════════════════
-        // [PUT] CẬP NHẬT
+        // XÓA (DELETE)
         // ════════════════════════════════════════════════════════════
-        [HttpPut("{id:int}")]
-        [Authorize(Roles = "Admin,Marketing")]
-        public async Task<IActionResult> Update(int id, [FromBody] Category category)
+        [HttpDelete("{productId:int}")]
+        public async Task<IActionResult> Remove(int productId)
         {
-            
-            if (id != category.Id) return BadRequest();
-            await _service.UpdateAsync(category);
-            return NoContent();
-        }
-
-        
-
-        
-        // ════════════════════════════════════════════════════════════
-        // [DELETE] XÓA
-        // ════════════════════════════════════════════════════════════
-        [HttpDelete("{id:int}")]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Delete(int id)
-        {
-            await _service.DeleteAsync(id);
+            await _repo.RemoveAsync(CurrentUserId, productId);
             return NoContent();
         }
     }

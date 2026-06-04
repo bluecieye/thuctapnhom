@@ -1,40 +1,64 @@
+
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+
 using Microsoft.EntityFrameworkCore;
+
 using Microsoft.IdentityModel.Tokens;
+
 using Microsoft.OpenApi.Models;
+
+using BaseCore.Common;
+
 using BaseCore.Repository;
+
 using BaseCore.Repository.EFCore;
+
+using BaseCore.Services;
+
+using BaseCore.Services.Authen;
+
 using System.Text;
 
+// ════════════════════════════════════════════════════════════
+// KHỞI TẠO BUILDER
+// ════════════════════════════════════════════════════════════
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
+// ════════════════════════════════════════════════════════════
+// CẤU HÌNH SWAGGER
+// ════════════════════════════════════════════════════════════
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
+
+        
         options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+
+        
+        
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
     });
 
 builder.Services.AddEndpointsApiExplorer();
 
-// Swagger Configuration
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "BaseCore API Service",
-        Version = "v1",
-        Description = "Business Logic Microservice - Products, Categories, Orders (Bài 10, 11)"
-    });
+    
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BaseCore Fashion API", Version = "v1" });
+
+    
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        In = ParameterLocation.Header,
-        Description = "Please enter JWT token",
-        Name = "Authorization",
-        Type = SecuritySchemeType.Http,
+        In = ParameterLocation.Header,              
+        Description = "Bearer JWT token",
+        Name = "Authorization",                     
+        Type = SecuritySchemeType.Http,             
         BearerFormat = "JWT",
-        Scheme = "bearer"
+        Scheme = "bearer"                           
     });
+
+    
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -47,100 +71,148 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// CORS
+// ════════════════════════════════════════════════════════════
+// CẤU HÌNH CORS
+// ════════════════════════════════════════════════════════════
 builder.Services.AddCors(options =>
 {
+
     options.AddPolicy("AllowAll", policy =>
-    {
-        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-    });
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
 
-//MySQL Configuration with EF Core
-//var connectionString = builder.Configuration.GetConnectionString("MySQL")
-//    ?? "Server=localhost;Database=BaseCoreSales;User=root;Password=;";
-//builder.Services.AddDbContext<MySqlDbContext>(options =>
-//    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
-
-
-
+// ════════════════════════════════════════════════════════════
+// CẤU HÌNH DBCONTEXT
+// ════════════════════════════════════════════════════════════
 builder.Services.AddDbContext<MySqlDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectedDb"));
-});
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectedDb")));
 
-
-// Repository Registration - Products, Categories, Orders, Manufacturers
+// ════════════════════════════════════════════════════════════
+// ĐĂNG KÝ DỊCH VỤ (DI)
+// ════════════════════════════════════════════════════════════
+builder.Services.AddScoped<IUserRepositoryEF, UserRepositoryEF>();
 builder.Services.AddScoped<IProductRepositoryEF, ProductRepositoryEF>();
+builder.Services.AddScoped<IProductVariantRepositoryEF, ProductVariantRepositoryEF>();
 builder.Services.AddScoped<ICategoryRepositoryEF, CategoryRepositoryEF>();
 builder.Services.AddScoped<IOrderRepositoryEF, OrderRepositoryEF>();
-builder.Services.AddScoped<IOrderDetailRepositoryEF, OrderDetailRepositoryEF>();
-builder.Services.AddScoped<IManufacturerRepositoryEF, ManufacturerRepositoryEF>();
+builder.Services.AddScoped<ICartRepositoryEF, CartRepositoryEF>();
+builder.Services.AddScoped<ICouponRepositoryEF, CouponRepositoryEF>();
+builder.Services.AddScoped<IReviewRepositoryEF, ReviewRepositoryEF>();
+builder.Services.AddScoped<IAddressRepositoryEF, AddressRepositoryEF>();
+builder.Services.AddScoped<IWishlistRepositoryEF, WishlistRepositoryEF>();
 
-// JWT Authentication
-var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:SecretKey"] ?? "YourSecretKeyForAuthenticationShouldBeLongEnough");
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<ICouponService, CouponService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IReviewService, ReviewService>();
+builder.Services.AddScoped<IAddressService, AddressService>();
+builder.Services.AddScoped<IShippingService, ShippingService>();
+
+// ════════════════════════════════════════════════════════════
+// CẤU HÌNH AUTHENTICATION/JWT
+// ════════════════════════════════════════════════════════════
+var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:SecretKey"]
+    ?? "YourSecretKeyForAuthenticationShouldBeLongEnough");
+
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 })
+
 .AddJwtBearer(x =>
 {
+    
     x.RequireHttpsMetadata = false;
+    
     x.SaveToken = true;
+    
     x.TokenValidationParameters = new TokenValidationParameters
     {
+
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(key),
+
         ValidateIssuer = false,
         ValidateAudience = false
+        
     };
 });
 
+// ════════════════════════════════════════════════════════════
+// BUILD APP & MIDDLEWARE PIPELINE
+// ════════════════════════════════════════════════════════════
 var app = builder.Build();
 
-// Auto migrate database + seed admin account
+// ════════════════════════════════════════════════════════════
+// MIGRATE DB & SEED ADMIN
+// ════════════════════════════════════════════════════════════
+
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<MySqlDbContext>();
+
     db.Database.Migrate();
 
-    if (!db.Users.Any(u => u.UserName == "admin"))
+    if (!db.Users.Any(u => u.Username == "admin"))
     {
-        var password = BaseCore.Common.TokenHelper.HashPassword("admin", out var salt);
+        
+        var hash = TokenHelper.HashPassword("admin", out string salt);
         db.Users.Add(new BaseCore.Entities.User
         {
-            Id        = Guid.NewGuid().ToString(),
-            UserName  = "admin",
-            Name      = "Administrator",
-            Password  = password,
-            Salt      = salt,
-            Email     = "admin@slaystore.com",
-            Phone     = "",
-            Contact   = "",
-            Position  = "Admin",
-            Image     = "",
-            IsActive  = true,
-            UserType  = 1,   // 1 = Admin
-            Created   = DateTime.Now
+            Username = "admin",
+            Email = "admin@basecore.com",
+            Phone = "",
+            PasswordHash = hash,
+            Salt = salt,
+            Role = "Admin",
+            IsActive = true,
+            CreatedAt = DateTime.UtcNow
         });
         db.SaveChanges();
-        Console.WriteLine("✅ Admin account created (username: admin / password: admin)");
+        Console.WriteLine("✅ Admin account seeded (admin / admin)");
     }
 }
 
-// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwagger();        
+    app.UseSwaggerUI();      
 }
 
+// ════════════════════════════════════════════════════════════
+// STATIC FILES & MEDIA
+// ════════════════════════════════════════════════════════════
+var mediaRoot = app.Configuration["Media:Root"] ?? "..\\Media";
+
+if (!Path.IsPathRooted(mediaRoot))
+    mediaRoot = Path.GetFullPath(Path.Combine(app.Environment.ContentRootPath, mediaRoot));
+
+Directory.CreateDirectory(Path.Combine(mediaRoot, "products"));
+
+var contentTypes = new Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider();
+contentTypes.Mappings[".avif"] = "image/avif";    
+contentTypes.Mappings[".webp"] = "image/webp";    
+
+app.UseStaticFiles(new Microsoft.AspNetCore.Builder.StaticFileOptions
+{
+    FileProvider = new Microsoft.Extensions.FileProviders.PhysicalFileProvider(mediaRoot),
+    RequestPath = "/images",
+    ContentTypeProvider = contentTypes
+});
+Console.WriteLine($"📁 /images → {mediaRoot}");
+
+// ════════════════════════════════════════════════════════════
+// MAP CONTROLLERS & RUN
+// ════════════════════════════════════════════════════════════
 app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
-Console.WriteLine("BaseCore API Service running on port 5001");
-Console.WriteLine("Endpoints: /api/products, /api/categories, /api/orders");
+Console.WriteLine("BaseCore Fashion API running on port 5001");
+
 app.Run();

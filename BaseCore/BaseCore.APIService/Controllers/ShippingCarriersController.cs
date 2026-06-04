@@ -2,91 +2,103 @@
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 using BaseCore.Entities;
-
-using BaseCore.Services;
+using BaseCore.Repository;
 
 namespace BaseCore.APIService.Controllers
 {
     // ════════════════════════════════════════════════════════════
-    // CONTROLLER DANH MỤC
+    // CONTROLLER ĐƠN VỊ VẬN CHUYỂN
     // ════════════════════════════════════════════════════════════
     [ApiController]
-
-    [Route("api/categories")]
-
-    public class CategoriesController : ControllerBase
+    [Route("api/shipping-carriers")]
+    public class ShippingCarriersController : ControllerBase
     {
         // ════════════════════════════════════════════════════════════
         // BIẾN & HÀM KHỞI TẠO
         // ════════════════════════════════════════════════════════════
-        private readonly ICategoryService _service;
-
-        public CategoriesController(ICategoryService service) { _service = service; }
+        private readonly MySqlDbContext _context;
+        public ShippingCarriersController(MySqlDbContext context) { _context = context; }
 
 
 
         // ════════════════════════════════════════════════════════════
-        // [GET] DANH SÁCH & CHI TIẾT
+        // LẤY DANH SÁCH / CHI TIẾT (GET)
         // ════════════════════════════════════════════════════════════
         [HttpGet]
-        public async Task<IActionResult> Get() => Ok(await _service.GetAllAsync());
-
-        
+        public async Task<IActionResult> GetAll([FromQuery] bool? activeOnly = null)
+        {
+            
+            var query = _context.ShippingCarriers.AsQueryable();
+            
+            if (activeOnly == true) query = query.Where(c => c.IsActive);
+            
+            return Ok(await query.OrderBy(c => c.Id).ToListAsync());
+        }
 
         
         
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var c = await _service.GetByIdAsync(id);
-            
+            var c = await _context.ShippingCarriers.FindAsync(id);
             return c == null ? NotFound() : Ok(c);
         }
 
-
-
+        
+        
         // ════════════════════════════════════════════════════════════
-        // [POST] TẠO MỚI
+        // TẠO MỚI (POST)
         // ════════════════════════════════════════════════════════════
         [HttpPost]
-        [Authorize(Roles = "Admin,Marketing")]
-        public async Task<IActionResult> Create([FromBody] Category category)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create([FromBody] ShippingCarrier carrier)
         {
-            var saved = await _service.CreateAsync(category);
             
-            return CreatedAtAction(nameof(GetById), new { id = saved.Id }, saved);
+            _context.ShippingCarriers.Add(carrier);
+            await _context.SaveChangesAsync();
+            
+            return CreatedAtAction(nameof(GetById), new { id = carrier.Id }, carrier);
         }
-
-        
 
         
         
         // ════════════════════════════════════════════════════════════
-        // [PUT] CẬP NHẬT
+        // CẬP NHẬT (PUT)
         // ════════════════════════════════════════════════════════════
         [HttpPut("{id:int}")]
-        [Authorize(Roles = "Admin,Marketing")]
-        public async Task<IActionResult> Update(int id, [FromBody] Category category)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Update(int id, [FromBody] ShippingCarrier carrier)
         {
             
-            if (id != category.Id) return BadRequest();
-            await _service.UpdateAsync(category);
-            return NoContent();
+            if (id != carrier.Id) return BadRequest();
+            
+            var existing = await _context.ShippingCarriers.FindAsync(id);
+            if (existing == null) return NotFound();
+            
+            existing.Name = carrier.Name;
+            existing.Code = carrier.Code;
+            existing.LogoFileName = carrier.LogoFileName;
+            existing.IsActive = carrier.IsActive;
+            await _context.SaveChangesAsync();
+            return Ok(existing);
         }
 
         
 
-        
         // ════════════════════════════════════════════════════════════
-        // [DELETE] XÓA
+        // XÓA (DELETE)
         // ════════════════════════════════════════════════════════════
         [HttpDelete("{id:int}")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _service.DeleteAsync(id);
+            var c = await _context.ShippingCarriers.FindAsync(id);
+            if (c == null) return NotFound();
+            _context.ShippingCarriers.Remove(c);
+            await _context.SaveChangesAsync();
             return NoContent();
         }
     }

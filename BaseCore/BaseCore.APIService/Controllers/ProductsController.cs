@@ -1,178 +1,157 @@
+
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+
 using BaseCore.Entities;
-using BaseCore.Repository.EFCore;
+
+using BaseCore.Services;
 
 namespace BaseCore.APIService.Controllers
 {
-    /// <summary>
-    /// Product API Controller
-    /// Teaching: RESTful API, CRUD Operations, EF Core (Bài 10, 11)
-    /// </summary>
-    [Route("api/[controller]")]
+    // ════════════════════════════════════════════════════════════
+    // CONTROLLER SẢN PHẨM
+    // ════════════════════════════════════════════════════════════
     [ApiController]
+    [Route("api/products")]
+
     public class ProductsController : ControllerBase
     {
-        private readonly IProductRepositoryEF _productRepository;
-        private readonly ICategoryRepositoryEF _categoryRepository;
+        // ════════════════════════════════════════════════════════════
+        // BIẾN & HÀM KHỞI TẠO
+        // ════════════════════════════════════════════════════════════
+        private readonly IProductService _service;
 
-        public ProductsController(IProductRepositoryEF productRepository, ICategoryRepositoryEF categoryRepository)
-        {
-            _productRepository = productRepository;
-            _categoryRepository = categoryRepository;
-        }
+        public ProductsController(IProductService service) { _service = service; }
 
-        /// <summary>
-        /// Get all products with pagination and search
-        /// </summary>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        // ════════════════════════════════════════════════════════════
+        // LẤY DANH SÁCH / CHI TIẾT (GET)
+        // ════════════════════════════════════════════════════════════
         [HttpGet]
-        public async Task<IActionResult> GetAll(
+        public async Task<IActionResult> Get(
             [FromQuery] string? keyword,
             [FromQuery] int? categoryId,
+            [FromQuery] List<int>? categoryIds,
+            [FromQuery] string? gender,
+            [FromQuery] string? season,
+            [FromQuery] decimal? minPrice,
+            [FromQuery] decimal? maxPrice,
+            [FromQuery] int? sizeId,
+            [FromQuery] int? colorId,
+            [FromQuery] bool inStockOnly = false,
+            [FromQuery] bool newOnly = false,
+            [FromQuery] string? sortBy = null,
             [FromQuery] int page = 1,
-            [FromQuery] int pageSize = 10)
+            [FromQuery] int pageSize = 12)
         {
-            var (products, totalCount) = await _productRepository.SearchAsync(keyword, categoryId, page, pageSize);
 
+            
+            
+            var (items, total, priceMin, priceMax) = await _service.SearchAsync(
+                keyword, categoryId, categoryIds, gender, season,
+                minPrice, maxPrice, sizeId, colorId, inStockOnly, newOnly, sortBy, page, pageSize);
             return Ok(new
             {
-                items = products,
-                totalCount,
-                page,
-                pageSize,
-                totalPages = (int)Math.Ceiling((double)totalCount / pageSize)
+                items, totalCount = total, priceMin, priceMax, page, pageSize,
+                
+                totalPages = (int)Math.Ceiling((double)total / pageSize)
             });
         }
 
-        /// <summary>
-        /// Get product by ID
-        /// </summary>
-        [HttpGet("{id}")]
+        
+
+        
+        
+        // ════════════════════════════════════════════════════════════
+        // CHI TIẾT SẢN PHẨM (GET)
+        // ════════════════════════════════════════════════════════════
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var product = await _productRepository.GetByIdWithIncludesAsync(id);
-            if (product == null)
-                return NotFound(new { message = "Product not found" });
-
-            return Ok(product);
+            var product = await _service.GetByIdAsync(id);
+            return product == null ? NotFound() : Ok(product);
         }
 
-        /// <summary>
-        /// Create new product (requires authentication)
-        /// </summary>
+        
+
+        
+
+        // ════════════════════════════════════════════════════════════
+        // DANH SÁCH NỔI BẬT (GET)
+        // ════════════════════════════════════════════════════════════
+        [HttpGet("new-arrivals")]
+        public async Task<IActionResult> NewArrivals([FromQuery] int limit = 12)
+            => Ok(await _service.GetNewArrivalsAsync(Math.Clamp(limit, 1, 30)));
+
+        
+
+        
+        
+        [HttpGet("best-sellers")]
+        public async Task<IActionResult> BestSellers([FromQuery] int limit = 30)
+            => Ok(await _service.GetBestSellersAsync(Math.Clamp(limit, 1, 30)));
+
+        
+
+        
+
+        // ════════════════════════════════════════════════════════════
+        // TẠO MỚI (POST)
+        // ════════════════════════════════════════════════════════════
         [HttpPost]
-        [Authorize]
-        public async Task<IActionResult> Create([FromBody] ProductCreateDto dto)
+        [Authorize(Roles = "Admin,Marketing")]
+        public async Task<IActionResult> Create([FromBody] Product product)
         {
-            // Validate category exists
-            var category = await _categoryRepository.GetByIdAsync(dto.CategoryId);
-            if (category == null)
-                return BadRequest(new { message = "Category not found" });
-
-            var product = new Product
-            {
-                Name = dto.Name,
-                Slug = dto.Slug,
-                Brand = dto.Brand,
-                Gender = dto.Gender,
-                Price = dto.Price,
-                OriginalPrice = dto.OriginalPrice,
-                IsNew = dto.IsNew,
-                Stock = dto.Stock,
-                CategoryId = dto.CategoryId,
-                ManufacturerId = dto.ManufacturerId,
-                Description = dto.Description,
-                ImageUrl = dto.ImageUrl ?? ""
-            };
-
-            await _productRepository.AddAsync(product);
-            return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
+            var saved = await _service.CreateAsync(product);
+            return CreatedAtAction(nameof(GetById), new { id = saved.Id }, saved);
         }
 
-        /// <summary>
-        /// Update product (requires authentication)
-        /// </summary>
-        [HttpPut("{id}")]
-        [Authorize]
-        public async Task<IActionResult> Update(int id, [FromBody] ProductUpdateDto dto)
+        
+
+        
+        
+        // ════════════════════════════════════════════════════════════
+        // CẬP NHẬT (PUT)
+        // ════════════════════════════════════════════════════════════
+        [HttpPut("{id:int}")]
+        [Authorize(Roles = "Admin,Marketing")]
+        public async Task<IActionResult> Update(int id, [FromBody] Product product)
         {
-            var product = await _productRepository.GetByIdAsync(id);
-            if (product == null)
-                return NotFound(new { message = "Product not found" });
-
-            product.Name = dto.Name ?? product.Name;
-            product.Slug = dto.Slug ?? product.Slug;
-            product.Brand = dto.Brand ?? product.Brand;
-            product.Gender = dto.Gender ?? product.Gender;
-            product.Price = dto.Price ?? product.Price;
-            product.OriginalPrice = dto.OriginalPrice ?? product.OriginalPrice;
-            product.IsNew = dto.IsNew ?? product.IsNew;
-            product.Stock = dto.Stock ?? product.Stock;
-            product.CategoryId = dto.CategoryId ?? product.CategoryId;
-            product.ManufacturerId = dto.ManufacturerId;
-            product.Description = dto.Description ?? product.Description;
-            product.ImageUrl = dto.ImageUrl ?? product.ImageUrl;
-
-            await _productRepository.UpdateAsync(product);
-            return Ok(product);
+            if (id != product.Id) return BadRequest();
+            await _service.UpdateAsync(product);
+            return NoContent();
         }
 
-        /// <summary>
-        /// Delete product (requires authentication)
-        /// </summary>
-        [HttpDelete("{id}")]
-        [Authorize]
+        
+
+        
+
+        // ════════════════════════════════════════════════════════════
+        // XÓA (DELETE)
+        // ════════════════════════════════════════════════════════════
+        [HttpDelete("{id:int}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
-            var product = await _productRepository.GetByIdAsync(id);
-            if (product == null)
-                return NotFound(new { message = "Product not found" });
-
-            await _productRepository.DeleteAsync(product);
-            return Ok(new { message = "Product deleted successfully" });
+            await _service.DeleteAsync(id);
+            return NoContent();
         }
-
-        /// <summary>
-        /// Get products by category
-        /// </summary>
-        [HttpGet("category/{categoryId}")]
-        public async Task<IActionResult> GetByCategory(int categoryId)
-        {
-            var products = await _productRepository.GetByCategoryAsync(categoryId);
-            return Ok(products);
-        }
-    }
-
-    // DTOs
-    public class ProductCreateDto
-    {
-        public string Name { get; set; } = "";
-        public string? Slug { get; set; }
-        public string? Brand { get; set; }
-        public string? Gender { get; set; }
-        public decimal Price { get; set; }
-        public decimal? OriginalPrice { get; set; }
-        public bool IsNew { get; set; }
-        public int Stock { get; set; }
-        public int CategoryId { get; set; }
-        public int? ManufacturerId { get; set; }
-        public string? Description { get; set; }
-        public string? ImageUrl { get; set; }
-    }
-
-    public class ProductUpdateDto
-    {
-        public string? Name { get; set; }
-        public string? Slug { get; set; }
-        public string? Brand { get; set; }
-        public string? Gender { get; set; }
-        public decimal? Price { get; set; }
-        public decimal? OriginalPrice { get; set; }
-        public bool? IsNew { get; set; }
-        public int? Stock { get; set; }
-        public int? CategoryId { get; set; }
-        public int? ManufacturerId { get; set; }
-        public string? Description { get; set; }
-        public string? ImageUrl { get; set; }
     }
 }

@@ -1,189 +1,222 @@
+
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using BaseCore.Entities;
-using BaseCore.Repository.EFCore;
+
 using System.Security.Claims;
+
+using BaseCore.Repository.EFCore;
+
+using BaseCore.Services;
 
 namespace BaseCore.APIService.Controllers
 {
-    /// <summary>
-    /// Order API Controller
-    /// Teaching: RESTful API, Business Logic, Authentication (Bài 10, 11)
-    /// </summary>
-    [Route("api/[controller]")]
+
+    // ════════════════════════════════════════════════════════════
+    // DTO YÊU CẦU ĐƠN HÀNG
+    // ════════════════════════════════════════════════════════════
+    public class UpdateStatusDto
+    {
+        
+        public string Status { get; set; } = "";
+        
+        public string? Note { get; set; }
+    }
+
+    
+
+    public class ApplyCouponDto
+    {
+        public string Code { get; set; } = "";
+        
+        public decimal Subtotal { get; set; }
+    }
+
+    // ════════════════════════════════════════════════════════════
+    // CONTROLLER ĐƠN HÀNG
+    // ════════════════════════════════════════════════════════════
     [ApiController]
+    [Route("api/orders")]
+
     [Authorize]
     public class OrdersController : ControllerBase
     {
-        private readonly IOrderRepositoryEF _orderRepository;
-        private readonly IOrderDetailRepositoryEF _orderDetailRepository;
-        private readonly IProductRepositoryEF _productRepository;
+        // ════════════════════════════════════════════════════════════
+        // BIẾN & HÀM KHỞI TẠO
+        // ════════════════════════════════════════════════════════════
+        private readonly IOrderService _orderService;
 
-        public OrdersController(
-            IOrderRepositoryEF orderRepository,
-            IOrderDetailRepositoryEF orderDetailRepository,
-            IProductRepositoryEF productRepository)
+        private readonly IOrderRepositoryEF _orderRepo;
+
+        private readonly ICouponService _couponService;
+
+        public OrdersController(IOrderService orderService, IOrderRepositoryEF orderRepo, ICouponService couponService)
         {
-            _orderRepository = orderRepository;
-            _orderDetailRepository = orderDetailRepository;
-            _productRepository = productRepository;
+            _orderService = orderService;
+            _orderRepo = orderRepo;
+            _couponService = couponService;
         }
 
-        /// <summary>
-        /// Get orders for current user
-        /// </summary>
-        [HttpGet]
-        public async Task<IActionResult> GetMyOrders()
-        {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            if (string.IsNullOrEmpty(userId) || !Guid.TryParse(userId, out var userGuid))
-                return Unauthorized();
+        private int CurrentUserId
+            => int.TryParse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value, out var id) ? id : 0;
 
-            var orders = await _orderRepository.GetByUserAsync(userGuid);
-            return Ok(orders);
+
+
+        // ════════════════════════════════════════════════════════════
+        // ĐẶT HÀNG
+        // ════════════════════════════════════════════════════════════
+        [HttpPost]
+        public async Task<IActionResult> Place([FromBody] CreateOrderRequest request)
+        {
+            
+            request.UserId = CurrentUserId;
+            try
+            {
+                var order = await _orderService.PlaceOrderAsync(request);
+                
+                return CreatedAtAction(nameof(GetById), new { id = order.Id }, order);
+            }
+            catch (System.InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
-        /// <summary>
-        /// Get all orders (Admin only)
-        /// </summary>
-        [HttpGet("all")]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> GetAllOrders()
-        {
-            var orders = await _orderRepository.GetAllAsync();
-            return Ok(orders);
-        }
 
-        /// <summary>
-        /// Get order by ID
-        /// </summary>
-        [HttpGet("{id}")]
+
+        // ════════════════════════════════════════════════════════════
+        // LỊCH SỬ ĐƠN HÀNG
+        // ════════════════════════════════════════════════════════════
+        [HttpGet("me")]
+        public async Task<IActionResult> GetMine()
+            => Ok(await _orderService.GetByUserAsync(CurrentUserId));
+
+        
+
+        
+
+        
+
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var order = await _orderRepository.GetByIdAsync(id);
-            if (order == null) return NotFound(new { message = "Order not found" });
+            var order = await _orderService.GetByIdAsync(id);
+            if (order == null) return NotFound();
 
-            var details = await _orderDetailRepository.GetByOrderAsync(id);
-            return Ok(new { order, details });
-        }
-
-        /// <summary>
-        /// Create new order
-        /// </summary>
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateOrderDto dto)
-        {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            if (string.IsNullOrEmpty(userId) || !Guid.TryParse(userId, out var userGuid))
-                return Unauthorized();
-
-            // Validate products and calculate total
-            decimal totalAmount = 0;
-            var orderDetails = new List<OrderDetail>();
-
-            foreach (var item in dto.Items)
-            {
-                var product = await _productRepository.GetByIdAsync(item.ProductId);
-                if (product == null)
-                    return BadRequest(new { message = $"Product {item.ProductId} not found" });
-
-                if (product.Stock < item.Quantity)
-                    return BadRequest(new { message = $"Insufficient stock for {product.Name}" });
-
-                totalAmount += product.Price * item.Quantity;
-                orderDetails.Add(new OrderDetail
-                {
-                    ProductId = item.ProductId,
-                    Quantity = item.Quantity,
-                    UnitPrice = product.Price
-                });
-
-                // Update stock
-                product.Stock -= item.Quantity;
-                await _productRepository.UpdateAsync(product);
-            }
-
-            var order = new Order
-            {
-                UserId = userGuid,
-                OrderDate = DateTime.Now,
-                TotalAmount = totalAmount,
-                Status = "Pending",
-                ShippingAddress = dto.ShippingAddress ?? ""
-            };
-
-            await _orderRepository.AddAsync(order);
-
-            // Add order details
-            foreach (var detail in orderDetails)
-            {
-                detail.OrderId = order.Id;
-                await _orderDetailRepository.AddAsync(detail);
-            }
-
-            return CreatedAtAction(nameof(GetById), new { id = order.Id }, new { order, details = orderDetails });
-        }
-
-        /// <summary>
-        /// Update order status
-        /// </summary>
-        [HttpPut("{id}/status")]
-        public async Task<IActionResult> UpdateStatus(int id, [FromBody] UpdateStatusDto dto)
-        {
-            var order = await _orderRepository.GetByIdAsync(id);
-            if (order == null) return NotFound(new { message = "Order not found" });
-
-            order.Status = dto.Status;
-            await _orderRepository.UpdateAsync(order);
-
+            if (order.UserId != CurrentUserId
+                && !User.IsInRole("Admin")
+                && !User.IsInRole("WarehouseStaff"))
+                return Forbid();
             return Ok(order);
         }
 
-        /// <summary>
-        /// Cancel order
-        /// </summary>
-        [HttpPut("{id}/cancel")]
-        public async Task<IActionResult> CancelOrder(int id)
+
+
+        // ════════════════════════════════════════════════════════════
+        // HỦY ĐƠN
+        // ════════════════════════════════════════════════════════════
+        [HttpPut("{id:int}/cancel")]
+        public async Task<IActionResult> Cancel(int id)
         {
-            var order = await _orderRepository.GetByIdAsync(id);
-            if (order == null) return NotFound(new { message = "Order not found" });
-
-            if (order.Status == "Completed")
-                return BadRequest(new { message = "Cannot cancel completed order" });
-
-            // Restore stock
-            var details = await _orderDetailRepository.GetByOrderAsync(id);
-            foreach (var detail in details)
+            var order = await _orderService.GetByIdAsync(id);
+            if (order == null) return NotFound();
+            if (order.UserId != CurrentUserId && !User.IsInRole("Admin"))
+                return Forbid();
+            try
             {
-                var product = await _productRepository.GetByIdAsync(detail.ProductId);
-                if (product != null)
-                {
-                    product.Stock += detail.Quantity;
-                    await _productRepository.UpdateAsync(product);
-                }
+                await _orderService.CancelAsync(id);
+                return Ok(new { message = "Đã huỷ đơn hàng." });
             }
-
-            order.Status = "Cancelled";
-            await _orderRepository.UpdateAsync(order);
-
-            return Ok(new { message = "Order cancelled successfully", order });
+            catch (System.InvalidOperationException ex)
+            {
+                
+                return BadRequest(new { message = ex.Message });
+            }
         }
-    }
 
-    public class CreateOrderDto
-    {
-        public List<OrderItemDto> Items { get; set; } = new();
-        public string? ShippingAddress { get; set; }
-    }
+        
 
-    public class OrderItemDto
-    {
-        public int ProductId { get; set; }
-        public int Quantity { get; set; }
-    }
+        
 
-    public class UpdateStatusDto
-    {
-        public string Status { get; set; } = "";
+        
+
+        
+
+        // ════════════════════════════════════════════════════════════
+        // CHUYỂN TRẠNG THÁI
+        // ════════════════════════════════════════════════════════════
+        [HttpPut("{id:int}/status")]
+        [Authorize(Roles = "Admin,WarehouseStaff")]
+        public async Task<IActionResult> ChangeStatus(int id, [FromBody] UpdateStatusDto dto)
+        {
+            try
+            {
+                var order = await _orderService.ChangeStatusAsync(id, dto.Status, dto.Note);
+                return order == null ? NotFound() : Ok(order);
+            }
+            catch (System.InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        
+
+        
+
+        
+
+        
+        
+        // ════════════════════════════════════════════════════════════
+        // [GET] DANH SÁCH ADMIN
+        // ════════════════════════════════════════════════════════════
+        [HttpGet("admin")]
+        [Authorize(Roles = "Admin,WarehouseStaff")]
+        public async Task<IActionResult> SearchAdmin(
+            [FromQuery] string? keyword,
+            [FromQuery] string? status,
+            [FromQuery] decimal? minAmount,
+            [FromQuery] decimal? maxAmount,
+            [FromQuery] System.DateTime? dateFrom,
+            [FromQuery] System.DateTime? dateTo,
+            [FromQuery] int page = 1,
+            [FromQuery] int pageSize = 20)
+        {
+            
+            var (orders, total) = await _orderRepo.SearchAdminAsync(
+                keyword, status, minAmount, maxAmount, dateFrom, dateTo, page, pageSize);
+            return Ok(new
+            {
+                items = orders, totalCount = total, page, pageSize,
+                
+                totalPages = (int)System.Math.Ceiling((double)total / pageSize)
+            });
+        }
+
+        
+
+        
+
+        
+
+        
+        
+        // ════════════════════════════════════════════════════════════
+        // ÁP DỤNG MÃ GIẢM GIÁ
+        // ════════════════════════════════════════════════════════════
+        [HttpPost("apply-coupon")]
+        public async Task<IActionResult> ApplyCoupon([FromBody] ApplyCouponDto dto)
+        {
+            var result = await _couponService.ApplyAsync(dto.Code, dto.Subtotal);
+            
+            return Ok(new
+            {
+                isValid = result.IsValid,
+                discountAmount = result.DiscountAmount,
+                message = result.Message,
+                coupon = result.Coupon
+            });
+        }
     }
 }

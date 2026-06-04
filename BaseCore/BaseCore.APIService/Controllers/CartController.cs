@@ -3,27 +3,50 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-using BaseCore.Entities;
+using System.Security.Claims;
 
 using BaseCore.Services;
 
 namespace BaseCore.APIService.Controllers
 {
+
     // ════════════════════════════════════════════════════════════
-    // CONTROLLER DANH MỤC
+    // DTO YÊU CẦU GIỎ HÀNG
+    // ════════════════════════════════════════════════════════════
+    public class AddCartItemDto
+    {
+        
+        public int VariantId { get; set; }
+        
+        public int Quantity { get; set; } = 1;
+    }
+
+    
+
+    public class UpdateCartItemDto
+    {
+        public int Quantity { get; set; }
+    }
+
+    // ════════════════════════════════════════════════════════════
+    // CONTROLLER GIỎ HÀNG
     // ════════════════════════════════════════════════════════════
     [ApiController]
 
-    [Route("api/categories")]
+    [Route("api/cart")]
 
-    public class CategoriesController : ControllerBase
+    [Authorize]
+    public class CartController : ControllerBase
     {
         // ════════════════════════════════════════════════════════════
         // BIẾN & HÀM KHỞI TẠO
         // ════════════════════════════════════════════════════════════
-        private readonly ICategoryService _service;
+        private readonly ICartService _service;
 
-        public CategoriesController(ICategoryService service) { _service = service; }
+        public CartController(ICartService service) { _service = service; }
+
+        private int CurrentUserId
+            => int.TryParse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value, out var id) ? id : 0;
 
 
 
@@ -31,62 +54,70 @@ namespace BaseCore.APIService.Controllers
         // [GET] DANH SÁCH & CHI TIẾT
         // ════════════════════════════════════════════════════════════
         [HttpGet]
-        public async Task<IActionResult> Get() => Ok(await _service.GetAllAsync());
-
-        
-
-        
-        
-        [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetById(int id)
-        {
-            var c = await _service.GetByIdAsync(id);
-            
-            return c == null ? NotFound() : Ok(c);
-        }
+        public async Task<IActionResult> Get() => Ok(await _service.GetCartAsync(CurrentUserId));
 
 
 
         // ════════════════════════════════════════════════════════════
         // [POST] TẠO MỚI
         // ════════════════════════════════════════════════════════════
-        [HttpPost]
-        [Authorize(Roles = "Admin,Marketing")]
-        public async Task<IActionResult> Create([FromBody] Category category)
+        [HttpPost("items")]
+        public async Task<IActionResult> AddItem([FromBody] AddCartItemDto dto)
         {
-            var saved = await _service.CreateAsync(category);
-            
-            return CreatedAtAction(nameof(GetById), new { id = saved.Id }, saved);
+            try
+            {
+                var cart = await _service.AddItemAsync(CurrentUserId, dto.VariantId, dto.Quantity);
+                return Ok(cart);
+            }
+            catch (System.InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         
 
         
+
+        
+
         
         // ════════════════════════════════════════════════════════════
         // [PUT] CẬP NHẬT
         // ════════════════════════════════════════════════════════════
-        [HttpPut("{id:int}")]
-        [Authorize(Roles = "Admin,Marketing")]
-        public async Task<IActionResult> Update(int id, [FromBody] Category category)
+        [HttpPut("items/{itemId:int}")]
+        public async Task<IActionResult> UpdateItem(int itemId, [FromBody] UpdateCartItemDto dto)
         {
-            
-            if (id != category.Id) return BadRequest();
-            await _service.UpdateAsync(category);
-            return NoContent();
+            try
+            {
+                var cart = await _service.UpdateItemAsync(CurrentUserId, itemId, dto.Quantity);
+                return Ok(cart);
+            }
+            catch (System.InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         
 
         
+        
         // ════════════════════════════════════════════════════════════
         // [DELETE] XÓA
         // ════════════════════════════════════════════════════════════
-        [HttpDelete("{id:int}")]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpDelete("items/{itemId:int}")]
+        public async Task<IActionResult> RemoveItem(int itemId)
+            => Ok(await _service.RemoveItemAsync(CurrentUserId, itemId));
+
+        
+
+        
+        
+        [HttpDelete]
+        public async Task<IActionResult> Clear()
         {
-            await _service.DeleteAsync(id);
+            await _service.ClearAsync(CurrentUserId);
             return NoContent();
         }
     }

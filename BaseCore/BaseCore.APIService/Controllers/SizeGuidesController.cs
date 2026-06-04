@@ -4,89 +4,98 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 using BaseCore.Entities;
-
-using BaseCore.Services;
+using BaseCore.Repository;
+using Microsoft.EntityFrameworkCore;
 
 namespace BaseCore.APIService.Controllers
 {
     // ════════════════════════════════════════════════════════════
-    // CONTROLLER DANH MỤC
+    // CONTROLLER HƯỚNG DẪN SIZE
     // ════════════════════════════════════════════════════════════
     [ApiController]
-
-    [Route("api/categories")]
-
-    public class CategoriesController : ControllerBase
+    [Route("api/size-guides")]
+    public class SizeGuidesController : ControllerBase
     {
         // ════════════════════════════════════════════════════════════
         // BIẾN & HÀM KHỞI TẠO
         // ════════════════════════════════════════════════════════════
-        private readonly ICategoryService _service;
-
-        public CategoriesController(ICategoryService service) { _service = service; }
-
-
+        private readonly MySqlDbContext _context;
+        public SizeGuidesController(MySqlDbContext context) { _context = context; }
 
         // ════════════════════════════════════════════════════════════
-        // [GET] DANH SÁCH & CHI TIẾT
+        // LẤY DANH SÁCH / CHI TIẾT (GET)
         // ════════════════════════════════════════════════════════════
+
+
+        
+        
         [HttpGet]
-        public async Task<IActionResult> Get() => Ok(await _service.GetAllAsync());
-
-        
-
-        
-        
-        [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetAll()
         {
-            var c = await _service.GetByIdAsync(id);
-            
-            return c == null ? NotFound() : Ok(c);
+            var items = await _context.SizeGuides
+                
+                .Include(g => g.Size)
+                
+                .OrderBy(g => g.SizeId)
+                .ToListAsync();
+            return Ok(items);
         }
 
-
-
+        
         // ════════════════════════════════════════════════════════════
-        // [POST] TẠO MỚI
+        // TẠO MỚI (POST)
         // ════════════════════════════════════════════════════════════
         [HttpPost]
         [Authorize(Roles = "Admin,Marketing")]
-        public async Task<IActionResult> Create([FromBody] Category category)
+        public async Task<IActionResult> Create([FromBody] SizeGuide guide)
         {
-            var saved = await _service.CreateAsync(category);
             
-            return CreatedAtAction(nameof(GetById), new { id = saved.Id }, saved);
+            var exists = await _context.SizeGuides.AnyAsync(g => g.SizeId == guide.SizeId);
+            if (exists)
+                return BadRequest(new { message = "Size này đã có bảng đo." });
+            _context.SizeGuides.Add(guide);
+            await _context.SaveChangesAsync();
+            
+            var saved = await _context.SizeGuides
+                .Include(g => g.Size)
+                .FirstAsync(g => g.Id == guide.Id);
+            return Ok(saved);
         }
 
         
 
-        
-        
         // ════════════════════════════════════════════════════════════
-        // [PUT] CẬP NHẬT
+        // CẬP NHẬT (PUT)
         // ════════════════════════════════════════════════════════════
         [HttpPut("{id:int}")]
-        [Authorize(Roles = "Admin,Marketing")]
-        public async Task<IActionResult> Update(int id, [FromBody] Category category)
+        [Authorize(Roles = "Admin,Marketing,Warehouse")]
+        public async Task<IActionResult> Update(int id, [FromBody] SizeGuide guide)
         {
+            var existing = await _context.SizeGuides.FindAsync(id);
+            if (existing == null) return NotFound();
             
-            if (id != category.Id) return BadRequest();
-            await _service.UpdateAsync(category);
-            return NoContent();
+            existing.SizeId = guide.SizeId;
+            existing.Chest = guide.Chest;
+            existing.Waist = guide.Waist;
+            existing.Shoulder = guide.Shoulder;
+            existing.Length = guide.Length;
+            await _context.SaveChangesAsync();
+            return Ok(existing);
         }
 
         
-
         
         // ════════════════════════════════════════════════════════════
-        // [DELETE] XÓA
+        // XÓA (DELETE)
         // ════════════════════════════════════════════════════════════
         [HttpDelete("{id:int}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,Marketing,Warehouse")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _service.DeleteAsync(id);
+            var guide = await _context.SizeGuides.FindAsync(id);
+            if (guide == null) return NotFound();
+            _context.SizeGuides.Remove(guide);
+            await _context.SaveChangesAsync();
             return NoContent();
         }
     }

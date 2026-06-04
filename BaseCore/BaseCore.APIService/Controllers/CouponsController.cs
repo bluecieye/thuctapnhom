@@ -10,53 +10,58 @@ using BaseCore.Services;
 namespace BaseCore.APIService.Controllers
 {
     // ════════════════════════════════════════════════════════════
-    // CONTROLLER DANH MỤC
+    // CONTROLLER MÃ GIẢM GIÁ
     // ════════════════════════════════════════════════════════════
     [ApiController]
 
-    [Route("api/categories")]
+    [Route("api/coupons")]
 
-    public class CategoriesController : ControllerBase
+    public class CouponsController : ControllerBase
     {
         // ════════════════════════════════════════════════════════════
         // BIẾN & HÀM KHỞI TẠO
         // ════════════════════════════════════════════════════════════
-        private readonly ICategoryService _service;
+        private readonly ICouponService _service;
 
-        public CategoriesController(ICategoryService service) { _service = service; }
+        public CouponsController(ICouponService service) { _service = service; }
 
 
 
         // ════════════════════════════════════════════════════════════
         // [GET] DANH SÁCH & CHI TIẾT
         // ════════════════════════════════════════════════════════════
+        [HttpGet("active")]
+        public async Task<IActionResult> Active() => Ok(await _service.GetActiveAsync());
+
+        // GET /api/coupons — admin lấy TẤT CẢ coupon (kể cả hết hạn / inactive) để quản lý.
         [HttpGet]
-        public async Task<IActionResult> Get() => Ok(await _service.GetAllAsync());
+        [Authorize(Roles = "Admin,Marketing")]
+        public async Task<IActionResult> GetAll() => Ok(await _service.GetAllAsync());
 
         
 
         
         
-        [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetById(int id)
+        [HttpGet("{code}")]
+        public async Task<IActionResult> GetByCode(string code)
         {
-            var c = await _service.GetByIdAsync(id);
-            
+            var c = await _service.GetByCodeAsync(code);
             return c == null ? NotFound() : Ok(c);
         }
 
 
 
         // ════════════════════════════════════════════════════════════
-        // [POST] TẠO MỚI
+        // CRUD ADMIN — [POST] TẠO MỚI
         // ════════════════════════════════════════════════════════════
         [HttpPost]
         [Authorize(Roles = "Admin,Marketing")]
-        public async Task<IActionResult> Create([FromBody] Category category)
+        public async Task<IActionResult> Create([FromBody] Coupon coupon)
         {
-            var saved = await _service.CreateAsync(category);
             
-            return CreatedAtAction(nameof(GetById), new { id = saved.Id }, saved);
+            if (await _service.GetByCodeAsync(coupon.Code) != null)
+                return BadRequest(new { message = "Mã coupon đã tồn tại." });
+            return Ok(await _service.CreateAsync(coupon));
         }
 
         
@@ -64,15 +69,14 @@ namespace BaseCore.APIService.Controllers
         
         
         // ════════════════════════════════════════════════════════════
-        // [PUT] CẬP NHẬT
+        // CRUD ADMIN — [PUT] CẬP NHẬT
         // ════════════════════════════════════════════════════════════
         [HttpPut("{id:int}")]
         [Authorize(Roles = "Admin,Marketing")]
-        public async Task<IActionResult> Update(int id, [FromBody] Category category)
+        public async Task<IActionResult> Update(int id, [FromBody] Coupon coupon)
         {
-            
-            if (id != category.Id) return BadRequest();
-            await _service.UpdateAsync(category);
+            if (id != coupon.Id) return BadRequest();
+            await _service.UpdateAsync(coupon);
             return NoContent();
         }
 
@@ -80,7 +84,7 @@ namespace BaseCore.APIService.Controllers
 
         
         // ════════════════════════════════════════════════════════════
-        // [DELETE] XÓA
+        // CRUD ADMIN — [DELETE] XÓA
         // ════════════════════════════════════════════════════════════
         [HttpDelete("{id:int}")]
         [Authorize(Roles = "Admin")]
