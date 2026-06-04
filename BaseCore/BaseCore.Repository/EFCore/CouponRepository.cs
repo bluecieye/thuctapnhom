@@ -7,33 +7,40 @@ namespace BaseCore.Repository.EFCore
 {
 
     // ════════════════════════════════════════════════════════════
-    // INTERFACE REPOSITORY DANH MỤC
+    // INTERFACE REPOSITORY MÃ GIẢM GIÁ
     // ════════════════════════════════════════════════════════════
-    public interface ICategoryRepositoryEF : IRepository<Category>
+    public interface ICouponRepositoryEF : IRepository<Coupon>
     {
-        Task<Category?> GetByNameAsync(string name);
+
+        Task<Coupon?> GetByCodeAsync(string code);
+
+        Task<List<Coupon>> GetActiveAsync(DateTime now);
     }
 
     // ════════════════════════════════════════════════════════════
-    // REPOSITORY DANH MỤC
+    // REPOSITORY MÃ GIẢM GIÁ
     // ════════════════════════════════════════════════════════════
-    public class CategoryRepositoryEF : Repository<Category>, ICategoryRepositoryEF
+    public class CouponRepositoryEF : Repository<Coupon>, ICouponRepositoryEF
     {
         // ════════════════════════════════════════════════════════════
         // HÀM KHỞI TẠO
         // ════════════════════════════════════════════════════════════
-        public CategoryRepositoryEF(MySqlDbContext context) : base(context) { }
+        public CouponRepositoryEF(MySqlDbContext context) : base(context) { }
 
         // ════════════════════════════════════════════════════════════
         // PHƯƠNG THỨC TRUY VẤN
         // ════════════════════════════════════════════════════════════
 
-        public override async Task<IEnumerable<Category>> GetAllAsync()
-            => await _dbSet.OrderBy(c => c.Name).ToListAsync();
+        public Task<Coupon?> GetByCodeAsync(string code)
+            => _dbSet.FirstOrDefaultAsync(c => c.Code.ToLower() == code.ToLower());
 
 
 
-        public Task<Category?> GetByNameAsync(string name)
-            => _dbSet.FirstOrDefaultAsync(c => c.Name.ToLower() == name.ToLower());
+        public Task<List<Coupon>> GetActiveAsync(DateTime now)
+            => _dbSet
+                .Where(c => c.IsActive && c.StartDate <= now && c.EndDate >= now
+                            && (c.UsageLimit == 0 || c.UsedCount < c.UsageLimit))
+                .OrderByDescending(c => c.StartDate)
+                .ToListAsync();
     }
 }

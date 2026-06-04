@@ -1,90 +1,72 @@
 
 
 using Microsoft.EntityFrameworkCore;
+
 using BaseCore.Entities;
-using BaseCore.Common.Helpers;
 
 namespace BaseCore.Repository.EFCore
 {
 
     // ════════════════════════════════════════════════════════════
-    // INTERFACE REPOSITORY NGƯỜI DÙNG
+    // INTERFACE REPOSITORY GIỎ HÀNG
     // ════════════════════════════════════════════════════════════
-    public interface IUserRepositoryEF : IRepository<User>
+    public interface ICartRepositoryEF : IRepository<Cart>
     {
 
-        Task<User?> GetByUsernameAsync(string username);
+        Task<Cart> GetOrCreateByUserAsync(int userId);
 
-        Task<User?> GetByEmailAsync(string email);
+        Task<Cart?> GetWithItemsAsync(int userId);
 
-        Task<bool> UsernameExistsAsync(string username);
-
-        Task<bool> EmailExistsAsync(string email);
-
-        Task<(List<User> Users, int TotalCount)> SearchAsync(
-            string? keyword, string? role, bool? isActive, int page, int pageSize);
+        Task ClearAsync(int userId);
     }
 
     // ════════════════════════════════════════════════════════════
-    // REPOSITORY NGƯỜI DÙNG
+    // REPOSITORY GIỎ HÀNG
     // ════════════════════════════════════════════════════════════
-    public class UserRepositoryEF : Repository<User>, IUserRepositoryEF
+    public class CartRepositoryEF : Repository<Cart>, ICartRepositoryEF
     {
         // ════════════════════════════════════════════════════════════
         // HÀM KHỞI TẠO
         // ════════════════════════════════════════════════════════════
-        public UserRepositoryEF(MySqlDbContext context) : base(context) { }
+        public CartRepositoryEF(MySqlDbContext context) : base(context) { }
 
         // ════════════════════════════════════════════════════════════
-        // PHƯƠNG THỨC TRA CỨU
+        // PHƯƠNG THỨC TRUY VẤN & THAY ĐỔI
         // ════════════════════════════════════════════════════════════
 
-        public Task<User?> GetByUsernameAsync(string username)
-            => _dbSet.FirstOrDefaultAsync(u => u.Username == username);
-
-        public Task<User?> GetByEmailAsync(string email)
-            => _dbSet.FirstOrDefaultAsync(u => u.Email == email);
-
-        // ════════════════════════════════════════════════════════════
-        // KIỂM TRA TỒN TẠI
-        // ════════════════════════════════════════════════════════════
-
-        public Task<bool> UsernameExistsAsync(string username)
-            => _dbSet.AnyAsync(u => u.Username == username);
-
-        public Task<bool> EmailExistsAsync(string email)
-            => _dbSet.AnyAsync(u => u.Email == email);
-
-        // ════════════════════════════════════════════════════════════
-        // TÌM KIẾM ADMIN
-        // ════════════════════════════════════════════════════════════
-
-        public async Task<(List<User> Users, int TotalCount)> SearchAsync(
-            string? keyword, string? role, bool? isActive, int page, int pageSize)
+        public async Task<Cart> GetOrCreateByUserAsync(int userId)
         {
-            
-            var query = _dbSet.AsQueryable();
+            var cart = await _dbSet.FirstOrDefaultAsync(c => c.UserId == userId);
+            if (cart != null) return cart;
 
-            
-            if (!string.IsNullOrWhiteSpace(keyword))
-            {
-                var kw = keyword.Trim();
-                query = query.Where(u =>
-                    EF.Functions.Collate(u.Username, SearchHelper.Collation).Contains(kw) ||
-                    EF.Functions.Collate(u.Email, SearchHelper.Collation).Contains(kw));
-            }
+            cart = new Cart { UserId = userId, UpdatedAt = DateTime.UtcNow };
+            _dbSet.Add(cart);
+            await _context.SaveChangesAsync();
+            return cart;
+        }
 
-            if (!string.IsNullOrWhiteSpace(role)) query = query.Where(u => u.Role == role);
-            if (isActive.HasValue) query = query.Where(u => u.IsActive == isActive);
+        // ════════════════════════════════════════════════════════════
+        // PHƯƠNG THỨC TRUY VẤN
+        // ════════════════════════════════════════════════════════════
 
-            var total = await query.CountAsync();
+        public Task<Cart?> GetWithItemsAsync(int userId)
+            => _dbSet
+                .Include(c => c.CartItems).ThenInclude(i => i.Variant).ThenInclude(v => v.Product).ThenInclude(p => p.Images)
+                .Include(c => c.CartItems).ThenInclude(i => i.Variant).ThenInclude(v => v.Color)
+                .Include(c => c.CartItems).ThenInclude(i => i.Variant).ThenInclude(v => v.Size)
+                .FirstOrDefaultAsync(c => c.UserId == userId);
 
-            
-            var users = await query
-                .OrderByDescending(u => u.Id)
-                .Skip((page - 1) * pageSize).Take(pageSize)
-                .ToListAsync();
-            return (users, total);
+        // ════════════════════════════════════════════════════════════
+        // PHƯƠNG THỨC THAY ĐỔI
+        // ════════════════════════════════════════════════════════════
+
+        public async Task ClearAsync(int userId)
+        {
+            var cart = await _dbSet.Include(c => c.CartItems).FirstOrDefaultAsync(c => c.UserId == userId);
+            if (cart == null) return;
+            _context.CartItems.RemoveRange(cart.CartItems);
+            cart.UpdatedAt = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
         }
     }
 }
