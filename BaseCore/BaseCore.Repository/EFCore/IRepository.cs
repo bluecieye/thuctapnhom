@@ -1,3 +1,5 @@
+
+
 using System.Linq.Expressions;
 
 namespace BaseCore.Repository.EFCore
@@ -6,22 +8,45 @@ namespace BaseCore.Repository.EFCore
     /// Generic Repository Interface for Entity Framework Core
     /// Teaching Repository Pattern (Bài 10)
     /// </summary>
+
+    // ════════════════════════════════════════════════════════════
+    // INTERFACE REPOSITORY TỔNG QUÁT
+    // ════════════════════════════════════════════════════════════
     public interface IRepository<T> where T : class
     {
-        // Query methods
+
+        // ════════════════════════════════════════════════════════════
+        // PHƯƠNG THỨC TRUY VẤN
+        // ════════════════════════════════════════════════════════════
+
         Task<T?> GetByIdAsync(object id);
+
         Task<IEnumerable<T>> GetAllAsync();
+
+
         Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate);
+
+
         Task<T?> FirstOrDefaultAsync(Expression<Func<T, bool>> predicate);
 
-        // Command methods
+        // ════════════════════════════════════════════════════════════
+        // PHƯƠNG THỨC THAY ĐỔI
+        // ════════════════════════════════════════════════════════════
+
         Task<T> AddAsync(T entity);
+
         Task AddRangeAsync(IEnumerable<T> entities);
+
         Task UpdateAsync(T entity);
+
         Task DeleteAsync(T entity);
+
         Task DeleteByIdAsync(object id);
 
-        // Pagination
+        // ════════════════════════════════════════════════════════════
+        // PHÂN TRANG
+        // ════════════════════════════════════════════════════════════
+
         Task<(IEnumerable<T> Items, int TotalCount)> GetPagedAsync(
             int page,
             int pageSize,
