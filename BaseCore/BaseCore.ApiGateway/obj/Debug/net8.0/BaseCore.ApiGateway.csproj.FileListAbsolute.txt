@@ -308,3 +308,179 @@ C:\Users\Asus G15\Downloads\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\refint
 C:\Users\Asus G15\Downloads\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.pdb
 C:\Users\Asus G15\Downloads\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.genruntimeconfig.cache
 C:\Users\Asus G15\Downloads\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\ref\BaseCore.ApiGateway.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\appsettings.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\ocelot.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.staticwebassets.endpoints.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.exe
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.deps.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.runtimeconfig.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\FluentValidation.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\IPAddressRange.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Ocelot.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.csproj.AssemblyReference.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.AssemblyInfoInputs.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.AssemblyInfo.cs
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.csproj.CoreCompileInputs.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\scopedcss\bundle\BaseCore.ApiGateway.styles.css
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.development.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\swae.build.ex.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.603A33FC.Up2Date
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\refint\BaseCore.ApiGateway.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.genruntimeconfig.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\ref\BaseCore.ApiGateway.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\appsettings.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\ocelot.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.staticwebassets.endpoints.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.exe
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.deps.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.runtimeconfig.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\IPAddressRange.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Ocelot.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.csproj.AssemblyReference.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.AssemblyInfoInputs.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.AssemblyInfo.cs
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.csproj.CoreCompileInputs.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\scopedcss\bundle\BaseCore.ApiGateway.styles.css
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.603A33FC.Up2Date
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\refint\BaseCore.ApiGateway.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.genruntimeconfig.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\ref\BaseCore.ApiGateway.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\appsettings.json
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\ocelot.json
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.staticwebassets.endpoints.json
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.exe
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.deps.json
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.runtimeconfig.json
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.pdb
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\FluentValidation.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\IPAddressRange.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Ocelot.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BaseCore\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.csproj.AssemblyReference.cache
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.AssemblyInfoInputs.cache
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.AssemblyInfo.cs
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.csproj.CoreCompileInputs.cache
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\scopedcss\bundle\BaseCore.ApiGateway.styles.css
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.json
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.development.json
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\swae.build.ex.cache
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.603A33FC.Up2Date
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.dll
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\refint\BaseCore.ApiGateway.dll
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.pdb
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.genruntimeconfig.cache
+D:\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\ref\BaseCore.ApiGateway.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\appsettings.json
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\ocelot.json
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.staticwebassets.endpoints.json
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.exe
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.deps.json
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.runtimeconfig.json
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\BaseCore.ApiGateway.pdb
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\FluentValidation.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\IPAddressRange.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Ocelot.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BaseCore0\BaseCore.ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.csproj.AssemblyReference.cache
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.AssemblyInfoInputs.cache
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.AssemblyInfo.cs
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.csproj.CoreCompileInputs.cache
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\scopedcss\bundle\BaseCore.ApiGateway.styles.css
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.json
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.development.json
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\swae.build.ex.cache
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.603A33FC.Up2Date
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.dll
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\refint\BaseCore.ApiGateway.dll
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.pdb
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.genruntimeconfig.cache
+D:\BaseCore0\BaseCore.ApiGateway\obj\Debug\net8.0\ref\BaseCore.ApiGateway.dll

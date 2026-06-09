@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net8.0": {
       "AutoMapper/13.0.1": {
@@ -4569,23 +4569,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hoang Nhat\\.nuget\\packages\\": {},
-    "D:\\SSMS utils\\NuGetPackages": {}
+    "C:\\Users\\Asus G15\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BaseCore0\\BaseCore.APIService\\BaseCore.APIService.csproj",
+      "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.APIService\\BaseCore.APIService.csproj",
       "projectName": "BaseCore.APIService",
-      "projectPath": "D:\\BaseCore0\\BaseCore.APIService\\BaseCore.APIService.csproj",
-      "packagesPath": "C:\\Users\\Hoang Nhat\\.nuget\\packages\\",
-      "outputPath": "D:\\BaseCore0\\BaseCore.APIService\\obj\\",
+      "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.APIService\\BaseCore.APIService.csproj",
+      "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.APIService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\SSMS utils\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hoang Nhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus G15\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4598,23 +4598,22 @@
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\BaseCore0\\BaseCore.Common\\BaseCore.Common.csproj": {
-              "projectPath": "D:\\BaseCore0\\BaseCore.Common\\BaseCore.Common.csproj"
+            "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.Common\\BaseCore.Common.csproj": {
+              "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.Common\\BaseCore.Common.csproj"
             },
-            "D:\\BaseCore0\\BaseCore.DTO\\BaseCore.DTO.csproj": {
-              "projectPath": "D:\\BaseCore0\\BaseCore.DTO\\BaseCore.DTO.csproj"
+            "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.DTO\\BaseCore.DTO.csproj": {
+              "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.DTO\\BaseCore.DTO.csproj"
             },
-            "D:\\BaseCore0\\BaseCore.Entities\\BaseCore.Entities.csproj": {
-              "projectPath": "D:\\BaseCore0\\BaseCore.Entities\\BaseCore.Entities.csproj"
+            "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.Entities\\BaseCore.Entities.csproj": {
+              "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.Entities\\BaseCore.Entities.csproj"
             },
-            "D:\\BaseCore0\\BaseCore.Repository\\BaseCore.Repository.csproj": {
-              "projectPath": "D:\\BaseCore0\\BaseCore.Repository\\BaseCore.Repository.csproj"
+            "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.Repository\\BaseCore.Repository.csproj": {
+              "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.Repository\\BaseCore.Repository.csproj"
             },
-            "D:\\BaseCore0\\BaseCore.Services\\BaseCore.Services.csproj": {
-              "projectPath": "D:\\BaseCore0\\BaseCore.Services\\BaseCore.Services.csproj"
+            "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.Services\\BaseCore.Services.csproj": {
+              "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.Services\\BaseCore.Services.csproj"
             }
           }
         }
@@ -4629,11 +4628,10 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net8.0": {
-        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
@@ -4674,7 +4672,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300-preview.0.26177.108/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

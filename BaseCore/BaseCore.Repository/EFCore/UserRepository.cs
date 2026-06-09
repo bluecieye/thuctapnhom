@@ -1,50 +1,90 @@
+
+
 using Microsoft.EntityFrameworkCore;
 using BaseCore.Entities;
+using BaseCore.Common.Helpers;
 
 namespace BaseCore.Repository.EFCore
 {
-    /// <summary>
-    /// User Repository using Entity Framework Core
-    /// </summary>
+
+    // ════════════════════════════════════════════════════════════
+    // INTERFACE REPOSITORY NGƯỜI DÙNG
+    // ════════════════════════════════════════════════════════════
     public interface IUserRepositoryEF : IRepository<User>
     {
+
         Task<User?> GetByUsernameAsync(string username);
-        Task<(List<User> Users, int TotalCount)> SearchAsync(string? keyword, int page, int pageSize);
+
+        Task<User?> GetByEmailAsync(string email);
+
+        Task<bool> UsernameExistsAsync(string username);
+
+        Task<bool> EmailExistsAsync(string email);
+
+        Task<(List<User> Users, int TotalCount)> SearchAsync(
+            string? keyword, string? role, bool? isActive, int page, int pageSize);
     }
 
+    // ════════════════════════════════════════════════════════════
+    // REPOSITORY NGƯỜI DÙNG
+    // ════════════════════════════════════════════════════════════
     public class UserRepositoryEF : Repository<User>, IUserRepositoryEF
     {
-        public UserRepositoryEF(MySqlDbContext context) : base(context)
-        {
-        }
+        // ════════════════════════════════════════════════════════════
+        // HÀM KHỞI TẠO
+        // ════════════════════════════════════════════════════════════
+        public UserRepositoryEF(MySqlDbContext context) : base(context) { }
 
-        public async Task<User?> GetByUsernameAsync(string username)
-        {
-            return await _dbSet.FirstOrDefaultAsync(u => u.UserName == username && u.IsActive);
-        }
+        // ════════════════════════════════════════════════════════════
+        // PHƯƠNG THỨC TRA CỨU
+        // ════════════════════════════════════════════════════════════
 
-        public async Task<(List<User> Users, int TotalCount)> SearchAsync(string? keyword, int page, int pageSize)
+        public Task<User?> GetByUsernameAsync(string username)
+            => _dbSet.FirstOrDefaultAsync(u => u.Username == username);
+
+        public Task<User?> GetByEmailAsync(string email)
+            => _dbSet.FirstOrDefaultAsync(u => u.Email == email);
+
+        // ════════════════════════════════════════════════════════════
+        // KIỂM TRA TỒN TẠI
+        // ════════════════════════════════════════════════════════════
+
+        public Task<bool> UsernameExistsAsync(string username)
+            => _dbSet.AnyAsync(u => u.Username == username);
+
+        public Task<bool> EmailExistsAsync(string email)
+            => _dbSet.AnyAsync(u => u.Email == email);
+
+        // ════════════════════════════════════════════════════════════
+        // TÌM KIẾM ADMIN
+        // ════════════════════════════════════════════════════════════
+
+        public async Task<(List<User> Users, int TotalCount)> SearchAsync(
+            string? keyword, string? role, bool? isActive, int page, int pageSize)
         {
+            
             var query = _dbSet.AsQueryable();
 
-            if (!string.IsNullOrEmpty(keyword))
+            
+            if (!string.IsNullOrWhiteSpace(keyword))
             {
-                keyword = keyword.ToLower();
+                var kw = keyword.Trim();
                 query = query.Where(u =>
-                    u.UserName.ToLower().Contains(keyword) ||
-                    u.Name.ToLower().Contains(keyword) ||
-                    (u.Email != null && u.Email.ToLower().Contains(keyword)));
+                    EF.Functions.Collate(u.Username, SearchHelper.Collation).Contains(kw) ||
+                    EF.Functions.Collate(u.Email, SearchHelper.Collation).Contains(kw));
             }
 
-            var totalCount = await query.CountAsync();
+            if (!string.IsNullOrWhiteSpace(role)) query = query.Where(u => u.Role == role);
+            if (isActive.HasValue) query = query.Where(u => u.IsActive == isActive);
 
+            var total = await query.CountAsync();
+
+            
             var users = await query
-                .OrderByDescending(u => u.Created)
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
+                .OrderByDescending(u => u.Id)
+                .Skip((page - 1) * pageSize).Take(pageSize)
                 .ToListAsync();
-
-            return (users, totalCount);
+            return (users, total);
         }
     }
 }

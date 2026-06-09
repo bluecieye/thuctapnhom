@@ -1,46 +1,88 @@
-﻿using System;
+
+
+using System;
 using System.Text.RegularExpressions;
 
 namespace BaseCore.Libs.Utils
 {
+
+    // ════════════════════════════════════════════════════════════
+    // TIỆN ÍCH (HÀM PHỤ TRỢ NGÀY & CHUỖI)
+    // ════════════════════════════════════════════════════════════
+
     public static class Utils
     {
+
+        // ════════════════════════════════════════════════════════════
+        // HÀM PHỤ TRỢ KHOẢNG NGÀY
+        // ════════════════════════════════════════════════════════════
+
         public static DateTime GetDateFrom(DateTime dateFrom, int timeZone)
         {
+
             return new DateTime(dateFrom.Year, dateFrom.Month, dateFrom.Day, 0, 0, 0).AddHours(-timeZone);
         }
 
+        
+
+        
         public static DateTime GetDateTo(DateTime dateTo, int timeZone)
         {
             return new DateTime(dateTo.Year, dateTo.Month, dateTo.Day, 0, 0, 0).AddDays(1).AddHours(-timeZone);
         }
+
+        
+
+        // ════════════════════════════════════════════════════════════
+        // CHUYỂN ĐỔI UTC
+        // ════════════════════════════════════════════════════════════
 
         public static DateTime GetUTCDateOnly(DateTime inputDateTime)
         {
             return inputDateTime.ToUniversalTime().Date;
         }
 
+        
+        
         public static DateTime GetUTCDateTime(DateTime inputDateTime)
         {
             return inputDateTime.ToUniversalTime();
         }
+
+        
+
+        
+        // ════════════════════════════════════════════════════════════
+        // ĐỊNH DẠNG NGÀY
+        // ════════════════════════════════════════════════════════════
 
         public static string GetFormatDate(DateTime inputDateTime, string format)
         {
             return inputDateTime.ToString(format);
         }
 
+        
+
+        
+        
+        // ════════════════════════════════════════════════════════════
+        // THỜI GIAN TƯƠNG ĐỐI (DỄ ĐỌC)
+        // ════════════════════════════════════════════════════════════
+
         public static string GetRelativeTimeAgo(DateTime dateTime)
         {
+            
             const int SECOND = 1;
             const int MINUTE = 60 * SECOND;
             const int HOUR = 60 * MINUTE;
             const int DAY = 24 * HOUR;
-            const int MONTH = 30 * DAY;
+            const int MONTH = 30 * DAY;     
 
             var ts = new TimeSpan(DateTime.UtcNow.Ticks - dateTime.Ticks);
+
             double delta = Math.Abs(ts.TotalSeconds);
 
+            
             if (delta < 1 * MINUTE)
                 return ts.Seconds == 1 ? "one second ago" : (ts.Seconds == 0 ? 1 : ts.Seconds) + " seconds ago";
 
@@ -71,8 +113,16 @@ namespace BaseCore.Libs.Utils
             return "";
         }
 
+        
+
+        
+        // ════════════════════════════════════════════════════════════
+        // LÀM SẠCH CHUỖI
+        // ════════════════════════════════════════════════════════════
+
         public static string RemoveSpecial(string input, string[] removeCharacters)
         {
+            
             foreach (var itemRemove in removeCharacters)
             {
                 input = Regex.Replace(input, itemRemove, "");

@@ -1,3 +1,5 @@
+
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using BaseCore.Entities;
@@ -8,202 +10,172 @@ using System.Threading.Tasks;
 
 namespace BaseCore.AuthService.Controllers
 {
+
+    // ════════════════════════════════════════════════════════════
+    // MODEL YÊU CẦU & PHẢN HỒI
+    // ════════════════════════════════════════════════════════════
+    public class UserResponse
+    {
+        public int Id { get; set; }
+        public string Username { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string Phone { get; set; } = "";
+        public string Role { get; set; } = "";
+        public bool IsActive { get; set; }
+        public DateTime CreatedAt { get; set; }
+    }
+
+    
+    
+    public class CreateUserRequest
+    {
+        public string Username { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string Password { get; set; } = "";
+        public string? Phone { get; set; }
+        public string Role { get; set; } = "Customer";   
+    }
+
+    
+
+    public class UpdateUserRequest
+    {
+        public string? Password { get; set; }   
+        public string? Email { get; set; }
+        public string? Phone { get; set; }
+        public string? Role { get; set; }
+        public bool? IsActive { get; set; }      
+    }
+
+    // ════════════════════════════════════════════════════════════
+    // CONTROLLER NGƯỜI DÙNG
+    // ════════════════════════════════════════════════════════════
     [Route("api/users")]
     [ApiController]
     [Authorize]
     public class UserController : ControllerBase
     {
+        // ════════════════════════════════════════════════════════════
+        // KHAI BÁO & HÀM KHỞI TẠO
+        // ════════════════════════════════════════════════════════════
         private readonly IUserService _userService;
 
-        public UserController(IUserService userService)
-        {
-            _userService = userService;
-        }
+        public UserController(IUserService userService) { _userService = userService; }
 
+        // ════════════════════════════════════════════════════════════
+        // HÀM HỖ TRỢ
+        // ════════════════════════════════════════════════════════════
+        private static UserResponse Map(User u) => new()
+        {
+            Id = u.Id,
+            Username = u.Username,
+            Email = u.Email,
+            Phone = u.Phone,
+            Role = u.Role,
+            IsActive = u.IsActive,
+            CreatedAt = u.CreatedAt
+        };
+
+        
+
+        // ════════════════════════════════════════════════════════════
+        // [GET] DANH SÁCH & CHI TIẾT NGƯỜI DÙNG
+        // ════════════════════════════════════════════════════════════
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> GetAll([FromQuery] string keyword = "", [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> GetAll(
+            [FromQuery] string? keyword,                 
+            [FromQuery] int page = 1,                    
+            [FromQuery] int pageSize = 10,               
+            [FromQuery] string? role = null,             
+            [FromQuery] bool? isActive = null)           
         {
-            var (users, totalCount) = await _userService.Search(keyword, page, pageSize);
 
-            var result = users.Select(u => new UserResponse
-            {
-                Id = u.Id,
-                Username = u.UserName,
-                Name = u.Name,
-                Email = u.Email,
-                Phone = u.Phone,
-                Position = u.Position,
-                IsActive = u.IsActive,
-                UserType = u.UserType,
-                Created = u.Created
-            });
+            var (users, total) = await _userService.Search(keyword, page, pageSize, role, isActive);
 
             return Ok(new
             {
-                data = result,
-                totalCount,
-                page,
-                pageSize,
-                totalPages = (int)Math.Ceiling((double)totalCount / pageSize)
+                data = users.Select(Map),                                   
+                totalCount = total, page, pageSize,
+                totalPages = (int)Math.Ceiling((double)total / pageSize)    
             });
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(string id)
+        
+
+        
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetById(int id)
         {
             var user = await _userService.GetById(id);
-            if (user == null)
-            {
-                return NotFound(new { message = "User not found" });
-            }
-
-            return Ok(new UserResponse
-            {
-                Id = user.Id,
-                Username = user.UserName,
-                Name = user.Name,
-                Email = user.Email,
-                Phone = user.Phone,
-                Position = user.Position,
-                IsActive = user.IsActive,
-                UserType = user.UserType,
-                Created = user.Created
-            });
+            return user == null ? NotFound() : Ok(Map(user));
         }
 
+        
+        
+        // ════════════════════════════════════════════════════════════
+        // [POST/PUT/DELETE] TẠO - CẬP NHẬT - XOÁ NGƯỜI DÙNG
+        // ════════════════════════════════════════════════════════════
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] CreateUserRequest request)
         {
-            if (request == null)
-            {
-                return BadRequest(new { message = "Invalid request" });
-            }
-
-            if (string.IsNullOrEmpty(request.Username) || string.IsNullOrEmpty(request.Password))
-            {
-                return BadRequest(new { message = "Username and password are required" });
-            }
+            
+            if (string.IsNullOrEmpty(request.Username) || string.IsNullOrEmpty(request.Email)
+                || string.IsNullOrEmpty(request.Password))
+                return BadRequest(new { message = "Username, email, password là bắt buộc." });
 
             try
             {
                 var user = new User
                 {
-                    UserName = request.Username,
-                    Name = request.Name ?? request.Username,
+                    Username = request.Username,
                     Email = request.Email,
-                    Phone = request.Phone,
-                    Position = request.Position,
-                    UserType = request.UserType
+                    Phone = request.Phone ?? "",
+                    Role = request.Role     
                 };
+                var created = await _userService.Create(user, request.Password);
 
-                var createdUser = await _userService.Create(user, request.Password);
-
-                return CreatedAtAction(nameof(GetById), new { id = createdUser.Id }, new UserResponse
-                {
-                    Id = createdUser.Id,
-                    Username = createdUser.UserName,
-                    Name = createdUser.Name,
-                    Email = createdUser.Email,
-                    Phone = createdUser.Phone,
-                    Position = createdUser.Position,
-                    IsActive = createdUser.IsActive,
-                    UserType = createdUser.UserType,
-                    Created = createdUser.Created
-                });
+                
+                return CreatedAtAction(nameof(GetById), new { id = created.Id }, Map(created));
             }
             catch (Exception ex)
             {
-                return BadRequest(new { message = "Failed to create user: " + ex.Message });
+                return BadRequest(new { message = "Tạo user thất bại: " + ex.Message });
             }
         }
 
-        [HttpPut("{id}")]
+        
+        
+        [HttpPut("{id:int}")]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Update(string id, [FromBody] UpdateUserRequest request)
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateUserRequest request)
         {
-            if (request == null)
-            {
-                return BadRequest(new { message = "Invalid request" });
-            }
+            
+            var user = await _userService.GetById(id);
+            if (user == null) return NotFound();
 
-            var existingUser = await _userService.GetById(id);
-            if (existingUser == null)
-            {
-                return NotFound(new { message = "User not found" });
-            }
+            
+            if (request.Email != null) user.Email = request.Email;
+            if (request.Phone != null) user.Phone = request.Phone;
+            if (request.Role != null) user.Role = request.Role;
+            if (request.IsActive.HasValue) user.IsActive = request.IsActive.Value;
 
-            existingUser.Name = request.Name ?? existingUser.Name;
-            existingUser.Email = request.Email ?? existingUser.Email;
-            existingUser.Phone = request.Phone ?? existingUser.Phone;
-            existingUser.Position = request.Position ?? existingUser.Position;
-            existingUser.UserType = request.UserType ?? existingUser.UserType;
-            existingUser.IsActive = request.IsActive ?? existingUser.IsActive;
-
-            await _userService.Update(existingUser, request.Password);
-
-            return Ok(new UserResponse
-            {
-                Id = existingUser.Id,
-                Username = existingUser.UserName,
-                Name = existingUser.Name,
-                Email = existingUser.Email,
-                Phone = existingUser.Phone,
-                Position = existingUser.Position,
-                IsActive = existingUser.IsActive,
-                UserType = existingUser.UserType,
-                Created = existingUser.Created
-            });
+            await _userService.Update(user, request.Password);
+            return Ok(Map(user));
         }
 
-        [HttpDelete("{id}")]
+        
+        
+        [HttpDelete("{id:int}")]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var existingUser = await _userService.GetById(id);
-            if (existingUser == null)
-            {
-                return NotFound(new { message = "User not found" });
-            }
+            var user = await _userService.GetById(id);
+            if (user == null) return NotFound();
 
             await _userService.Delete(id);
-            return NoContent();
+            return NoContent();   
         }
-    }
-
-    public class UserResponse
-    {
-        public string Id { get; set; }
-        public string Username { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public string Position { get; set; }
-        public bool IsActive { get; set; }
-        public int UserType { get; set; }
-        public DateTime Created { get; set; }
-    }
-
-    public class CreateUserRequest
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public string Position { get; set; }
-        public int UserType { get; set; }
-    }
-
-    public class UpdateUserRequest
-    {
-        public string Password { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public string Position { get; set; }
-        public int? UserType { get; set; }
-        public bool? IsActive { get; set; }
     }
 }

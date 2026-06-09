@@ -1,102 +1,121 @@
+
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
 using BaseCore.Repository;
-using BaseCore.Repository.Authen;
+using BaseCore.Repository.EFCore;
 using BaseCore.Services.Authen;
 using System.Text;
-using System.Data;
-using Microsoft.Data.SqlClient;
+
+// ════════════════════════════════════════════════════════════
+// CẤU HÌNH BUILDER
+// ════════════════════════════════════════════════════════════
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
+
+        
         options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
     });
+
 builder.Services.AddEndpointsApiExplorer();
 
-// CORS Configuration
+// ════════════════════════════════════════════════════════════
+// CẤU HÌNH CORS
+// ════════════════════════════════════════════════════════════
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader();
-    });
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
 
+// ════════════════════════════════════════════════════════════
+// SWAGGER & MVC
+// ════════════════════════════════════════════════════════════
 builder.Services.AddSwaggerGen(c =>
 {
+    
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "BaseCore Auth Service API",
+        Title = "BaseCore Auth Service",
         Version = "v1",
-        Description = "Authentication Microservice - Login, Register, User Management (Bài 10, 11)"
+        Description = "Authentication microservice — login, register, users, roles."
     });
+
+    
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        In = ParameterLocation.Header,
-        Description = "Please enter JWT token",
-        Name = "Authorization",
+        In = ParameterLocation.Header,    
+        Description = "Bearer JWT token",
+        Name = "Authorization",            
         Type = SecuritySchemeType.Http,
         BearerFormat = "JWT",
         Scheme = "bearer"
     });
+
+    
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
             new OpenApiSecurityScheme
             {
-                Reference = new OpenApiReference
-                {
-                    Type=ReferenceType.SecurityScheme,
-                    Id="Bearer"
-                }
+                Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
             },
-            new string[]{}
+            System.Array.Empty<string>()
         }
     });
 });
 
-// MongoDB Configuration
-// SQL Server Configuration
-builder.Services.AddScoped<IDbConnection>(sp =>
-    new SqlConnection(builder.Configuration
-        .GetConnectionString("DefaultConnection")));
-// DI for Authentication Services and Repositories only
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+// ════════════════════════════════════════════════════════════
+// KẾT NỐI DATABASE
+// ════════════════════════════════════════════════════════════
+builder.Services.AddDbContext<MySqlDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectedDb")));
 
-// JWT Authentication Key
-var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:SecretKey"] ?? "YourSecretKeyForAuthenticationShouldBeLongEnough");
+// ════════════════════════════════════════════════════════════
+// ĐĂNG KÝ SERVICE (DEPENDENCY INJECTION)
+// ════════════════════════════════════════════════════════════
+builder.Services.AddScoped<IUserRepositoryEF, UserRepositoryEF>();
+builder.Services.AddScoped<IUserService, UserService>();
+
+// ════════════════════════════════════════════════════════════
+// JWT & AUTHENTICATION
+// ════════════════════════════════════════════════════════════
+var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:SecretKey"]
+    ?? "YourSecretKeyForAuthenticationShouldBeLongEnough");
+
 builder.Services.AddAuthentication(x =>
 {
+    
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    
     x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 })
 .AddJwtBearer(x =>
 {
+    
     x.RequireHttpsMetadata = false;
+
     x.SaveToken = true;
+
     x.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateIssuer = false,
-        ValidateAudience = false
+        ValidateIssuerSigningKey = true,                    
+        IssuerSigningKey = new SymmetricSecurityKey(key),   
+        ValidateIssuer = false,                             
+        ValidateAudience = false                            
     };
 });
 
 var app = builder.Build();
 
-// Seed MongoDB data
-// Configure the HTTP request pipeline.
+// ════════════════════════════════════════════════════════════
+// MIDDLEWARE PIPELINE
+// ════════════════════════════════════════════════════════════
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -104,10 +123,16 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("AllowAll");
+
 app.UseAuthentication();
+
 app.UseAuthorization();
+
 app.MapControllers();
 
-Console.WriteLine("BaseCore Auth Service running on port 5002");
-Console.WriteLine("Endpoints: /api/auth, /api/users, /api/roles");
+// ════════════════════════════════════════════════════════════
+// MAP CONTROLLERS & RUN
+// ════════════════════════════════════════════════════════════
+System.Console.WriteLine("BaseCore Auth Service running on port 5002");
+
 app.Run();

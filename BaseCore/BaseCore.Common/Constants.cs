@@ -1,37 +1,66 @@
-﻿using System;
+
 
 namespace BaseCore.Common
 {
+
+    // ════════════════════════════════════════════════════════════
+    // HẰNG SỐ TOÀN CỤC
+    // ════════════════════════════════════════════════════════════
+
     public static class Constants
     {
-        public static int PAGE_SIZE_DEFAULT = 10;
-        public static string FORMAT_DATE_TIME = "dd/MM/yyyy hh:MM:ss"; 
-        public static string FORMAT_DATE = "dd/MM/yyyy";
+
+        // ════════════════════════════════════════════════════════════
+        // PHÂN TRANG
+        // ════════════════════════════════════════════════════════════
+
+        public const int PAGE_SIZE_DEFAULT = 12;
+
+        public const int PAGE_SIZE_ADMIN = 20;
+
+        // ════════════════════════════════════════════════════════════
+        // KHO & TỒN KHO
+        // ════════════════════════════════════════════════════════════
+
+        public const int LOW_STOCK_THRESHOLD = 5;
 
 
-        public static string RootCache = "PLM_";
+        public const int STOCK_RESERVATION_MINUTES = 30;
 
-        public static string Table_User = "user";
-        public static string Table_Role = "role";
-        public static string Table_Module = "module";
-        public static string Table_Function = "function";
-        public static string Table_Doctor = "doctor";
-        public static string Table_Area = "area";
-        public static string Table_Robot = "robot";
-        public static string Table_Camera = "camera";
-        public static string Table_RobotVersion = "robotversion";
-        public static string Table_Setting = "robotversion";
+        // ════════════════════════════════════════════════════════════
+        // VẬN CHUYỂN & GIÁ
+        // ════════════════════════════════════════════════════════════
 
-        public static string KeyGetListUser = Table_User + ":GetListUser_{0}_{1}:{2}";
-        public static string KeyGetListRole = Table_Role + ":GetListRole_{0}_{1}:{2}";
-        public static string KeyGetListModule = Table_Module + ":GetListModule_{0}_{1}:{2}";
-        public static string KeyGetListFunction = Table_Function + ":GetListFunction_{0}_{1}:{2}";
-        public static string KeyGetListDoctor = Table_Doctor + ":GetListDoctor_{0}_{1}:{2}";
-        public static string KeyGetListArea = Table_Area + ":GetListArea_{0}_{1}:{2}";
-        public static string KeyGetListRobot = Table_Robot + ":GetListRobot_{0}_{1}:{2}";
-        public static string KeyGetListCamera = Table_Camera + ":GetListCamera_{0}_{1}:{2}";
-        public static string KeyGetListRobotVersion = Table_RobotVersion + ":GetListRobotVersion_{0}_{1}:{2}";
-        public static string KeyGetListSetting = Table_Setting + ":GetListSetting_{0}_{1}:{2}";
+        public const decimal FREE_SHIPPING_FROM = 500_000m;
+
+        public const decimal SHIPPING_FEE_INNER_CITY = 25_000m;
+
+        public const decimal SHIPPING_FEE_OUTER = 35_000m;
+
+        // ════════════════════════════════════════════════════════════
+        // ĐỊNH DẠNG NGÀY THÁNG
+        // ════════════════════════════════════════════════════════════
+
+        public const string FORMAT_DATE_TIME = "dd/MM/yyyy HH:mm:ss";
+
+        public const string FORMAT_DATE = "dd/MM/yyyy";
+
+        // ════════════════════════════════════════════════════════════
+        // KHÓA CACHE
+        // ════════════════════════════════════════════════════════════
+
+        public const string CachePrefix = "BC_";
+
+
+
+        public const string KeyProductsList = CachePrefix + "products:list:{0}";
+
+        public const string KeyProductDetail = CachePrefix + "products:{0}";
+
+        public const string KeyCategoriesList = CachePrefix + "categories:list";
+
+        public const string KeyCollectionsActive = CachePrefix + "collections:active";
+
+        public const string KeyPromotionsActive = CachePrefix + "promotions:active";
     }
 }
-

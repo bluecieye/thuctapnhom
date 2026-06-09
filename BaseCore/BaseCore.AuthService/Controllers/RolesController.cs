@@ -1,93 +1,99 @@
+
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 
 namespace BaseCore.AuthService.Controllers
 {
-    /// <summary>
-    /// Roles API Controller
-    /// Teaching: Role-based Authorization (Bài 10, 11)
-    /// </summary>
+
+    // ════════════════════════════════════════════════════════════
+    // MODEL VAI TRÒ
+    // ════════════════════════════════════════════════════════════
+    public class RoleDto
+    {
+        public string Name { get; set; } = "";
+        public string Description { get; set; } = "";
+
+        public string[] Permissions { get; set; } = System.Array.Empty<string>();
+    }
+
+    // ════════════════════════════════════════════════════════════
+    // CONTROLLER VAI TRÒ & QUYỀN
+    // ════════════════════════════════════════════════════════════
     [Route("api/[controller]")]
     [ApiController]
     [Authorize(Roles = "Admin")]
     public class RolesController : ControllerBase
     {
-        // Static list of available roles
-        // In production, this would be stored in database
-        private static readonly List<RoleDto> _roles = new()
+
+        // ════════════════════════════════════════════════════════════
+        // DANH MỤC VAI TRÒ TĨNH
+        // ════════════════════════════════════════════════════════════
+        private static readonly RoleDto[] _roles = new[]
         {
-            new RoleDto { Id = 1, Name = "Admin", Description = "Administrator with full access", UserType = 1 },
-            new RoleDto { Id = 2, Name = "User", Description = "Regular user with limited access", UserType = 0 },
-            new RoleDto { Id = 3, Name = "Manager", Description = "Manager with moderate access", UserType = 2 }
+            
+            new RoleDto {
+                Name = "Customer",
+                Description = "Khách hàng — duyệt, đặt hàng, đánh giá.",
+                Permissions = new[] {
+                    "products.read","categories.read",
+                    "orders.create","orders.read.own","orders.cancel.own",  
+                    "cart.manage","wishlist.manage","reviews.create","addresses.manage"
+                }
+            },
+
+            new RoleDto {
+                Name = "WarehouseStaff",
+                Description = "Nhân viên kho — kiểm kho, đóng gói, cập nhật vận đơn.",
+                Permissions = new[] {
+                    "products.read","variants.read","variants.adjust-stock",
+                    "orders.read","orders.update-status","inventory.read"
+                }
+            },
+
+            new RoleDto {
+                Name = "Marketing",
+                Description = "Marketing — sản phẩm, khuyến mãi, banner.",
+                Permissions = new[] {
+                    "products.write","categories.write",
+                    "coupons.write","banners.write","reviews.moderate"
+                }
+            },
+
+            new RoleDto {
+                Name = "Admin",
+                Description = "Quản trị viên — toàn quyền.",
+                Permissions = new[] { "*" }
+            }
         };
 
-        /// <summary>
-        /// Get all roles
-        /// </summary>
+        
+
+        // ════════════════════════════════════════════════════════════
+        // [GET] DANH SÁCH VAI TRÒ & QUYỀN
+        // ════════════════════════════════════════════════════════════
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAll() => Ok(_roles);
+
+        
+        
+        [HttpGet("{name}")]
+        public IActionResult GetByName(string name)
         {
-            return Ok(_roles);
+
+            var dto = System.Array.Find(_roles, r => r.Name.Equals(name, System.StringComparison.OrdinalIgnoreCase));
+
+            return dto == null ? NotFound() : Ok(dto);
         }
 
-        /// <summary>
-        /// Get role by ID
-        /// </summary>
-        [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        
+        
+        [HttpGet("{name}/permissions")]
+        public IActionResult GetPermissions(string name)
         {
-            var role = _roles.Find(r => r.Id == id);
-            if (role == null)
-                return NotFound(new { message = "Role not found" });
+            var dto = System.Array.Find(_roles, r => r.Name.Equals(name, System.StringComparison.OrdinalIgnoreCase));
 
-            return Ok(role);
+            return dto == null ? NotFound() : Ok(new { role = dto.Name, permissions = dto.Permissions });
         }
-
-        /// <summary>
-        /// Get role by UserType
-        /// </summary>
-        [HttpGet("by-usertype/{userType}")]
-        public IActionResult GetByUserType(int userType)
-        {
-            var role = _roles.Find(r => r.UserType == userType);
-            if (role == null)
-                return NotFound(new { message = "Role not found for this UserType" });
-
-            return Ok(role);
-        }
-
-        /// <summary>
-        /// Get permissions for a role
-        /// </summary>
-        [HttpGet("{id}/permissions")]
-        public IActionResult GetPermissions(int id)
-        {
-            var role = _roles.Find(r => r.Id == id);
-            if (role == null)
-                return NotFound(new { message = "Role not found" });
-
-            // Define permissions based on role
-            var permissions = role.UserType switch
-            {
-                1 => new[] { "users.read", "users.write", "users.delete", "products.read", "products.write", "products.delete", "orders.read", "orders.write", "orders.delete", "categories.read", "categories.write", "categories.delete", "roles.read", "roles.write" },
-                2 => new[] { "users.read", "products.read", "products.write", "orders.read", "orders.write", "categories.read" },
-                _ => new[] { "products.read", "orders.read", "categories.read" }
-            };
-
-            return Ok(new
-            {
-                role = role.Name,
-                permissions
-            });
-        }
-    }
-
-    public class RoleDto
-    {
-        public int Id { get; set; }
-        public string Name { get; set; } = "";
-        public string Description { get; set; } = "";
-        public int UserType { get; set; }
     }
 }

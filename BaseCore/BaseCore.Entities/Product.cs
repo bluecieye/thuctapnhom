@@ -2,36 +2,37 @@
 
 namespace BaseCore.Entities
 {
+    // ════════════════════════════════════════════════════════════
+    // ENTITY SẢN PHẨM
+    // ════════════════════════════════════════════════════════════
     public class Product
     {
+        
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
-        public string? Slug { get; set; }
+        
+        public string Slug { get; set; } = string.Empty;
 
-        public decimal Price { get; set; }
+        public string Description { get; set; } = string.Empty;
 
-        public decimal? OriginalPrice { get; set; }
+        
+        public decimal BasePrice { get; set; }
 
-        public bool IsNew { get; set; }
-
-        public string? Brand { get; set; }
-
-        public string? Gender { get; set; }
-
-        public int Stock { get; set; }
-
-        public string ImageUrl { get; set; }
-
-        public string Description { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         public int CategoryId { get; set; }
+        
+        public Category? Category { get; set; }
 
-        public Category Category { get; set; }
+        public ICollection<ProductVariant> Variants { get; set; } = new List<ProductVariant>();
 
-        public int? ManufacturerId { get; set; }
+        public ICollection<ProductImage> Images { get; set; } = new List<ProductImage>();
 
-        public Manufacturer? Manufacturer { get; set; }
+        
+        public ICollection<Wishlist> Wishlists { get; set; } = new List<Wishlist>();
+
+        public ICollection<Review> Reviews { get; set; } = new List<Review>();
     }
 }

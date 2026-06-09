@@ -9,7 +9,6 @@ const api = axios.create({
   },
 });
 
-// Add token to requests
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
@@ -21,7 +20,6 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Handle 401 responses
 api.interceptors.response.use(
   (response) => response,
   (error) => {
@@ -34,13 +32,11 @@ api.interceptors.response.use(
   }
 );
 
-// Auth API
 export const authApi = {
   login: (userName, password) => api.post('/auth/login', { userName, password }),
   register: (userData) => api.post('/auth/register', userData),
 };
 
-// Products API
 export const productsApi = {
   getAll: (params) => api.get('/products', { params }),
   getById: (id) => api.get(`/products/${id}`),
@@ -49,7 +45,6 @@ export const productsApi = {
   delete: (id) => api.delete(`/products/${id}`),
 };
 
-// Categories API
 export const categoriesApi = {
   getAll: () => api.get('/categories'),
   getById: (id) => api.get(`/categories/${id}`),
@@ -58,7 +53,6 @@ export const categoriesApi = {
   delete: (id) => api.delete(`/categories/${id}`),
 };
 
-// Users API
 export const usersApi = {
   getAll: (params) => api.get('/users', { params }),
   getById: (id) => api.get(`/users/${id}`),

@@ -16,7 +16,7 @@ const MainLayout = ({ children }) => {
 
   return (
     <div className="wrapper">
-      {/* Navbar */}
+      {}
       <nav className="main-header navbar navbar-expand navbar-white navbar-light">
         <ul className="navbar-nav">
           <li className="nav-item">
@@ -39,7 +39,7 @@ const MainLayout = ({ children }) => {
         </ul>
       </nav>
 
-      {/* Sidebar */}
+      {}
       <aside className="main-sidebar sidebar-dark-primary elevation-4">
         <a href="/" className="brand-link">
           <span className="brand-text font-weight-light ml-3">
@@ -86,12 +86,12 @@ const MainLayout = ({ children }) => {
         </div>
       </aside>
 
-      {/* Content Wrapper */}
+      {}
       <div className="content-wrapper">
         {children}
       </div>
 
-      {/* Footer */}
+      {}
       <footer className="main-footer">
         <strong>BaseCore Admin</strong> - Teaching Framework
         <div className="float-right d-none d-sm-inline-block">
