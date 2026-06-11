@@ -1,6 +1,0 @@
-@BaseCore.MyBackend_HostAddress = http://localhost:5199
-
-GET {{BaseCore.MyBackend_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
