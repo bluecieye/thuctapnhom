@@ -942,11 +942,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.ApiGateway\\BaseCore.ApiGateway.csproj",
+      "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.ApiGateway\\BaseCore.ApiGateway.csproj",
       "projectName": "BaseCore.ApiGateway",
-      "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.ApiGateway\\BaseCore.ApiGateway.csproj",
+      "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.ApiGateway\\BaseCore.ApiGateway.csproj",
       "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\BaseCore.ApiGateway\\obj\\",
+      "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.ApiGateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
