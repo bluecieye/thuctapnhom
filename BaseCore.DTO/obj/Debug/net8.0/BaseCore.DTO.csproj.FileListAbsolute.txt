@@ -1,0 +1,77 @@
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.deps.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfoInputs.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfo.cs
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\obj\Debug\net8.0\refint\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.DTO\obj\Debug\net8.0\ref\BaseCore.DTO.dll
+D:\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore\BaseCore.DTO\obj\Debug\net8.0\refint\BaseCore.DTO.dll
+D:\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.deps.json
+D:\BaseCore\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfoInputs.cache
+D:\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfo.cs
+D:\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.csproj.CoreCompileInputs.cache
+D:\BaseCore\BaseCore.DTO\obj\Debug\net8.0\ref\BaseCore.DTO.dll
+D:\BaseCore0\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.deps.json
+D:\BaseCore0\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore0\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore0\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore0\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfoInputs.cache
+D:\BaseCore0\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfo.cs
+D:\BaseCore0\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.csproj.CoreCompileInputs.cache
+D:\BaseCore0\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore0\BaseCore.DTO\obj\Debug\net8.0\refint\BaseCore.DTO.dll
+D:\BaseCore0\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore0\BaseCore.DTO\obj\Debug\net8.0\ref\BaseCore.DTO.dll
+d:\BaseCore 17-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.deps.json
+d:\BaseCore 17-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.dll
+d:\BaseCore 17-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.pdb
+d:\BaseCore 17-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.GeneratedMSBuildEditorConfig.editorconfig
+d:\BaseCore 17-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfoInputs.cache
+d:\BaseCore 17-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfo.cs
+d:\BaseCore 17-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.csproj.CoreCompileInputs.cache
+d:\BaseCore 17-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.dll
+d:\BaseCore 17-6\BaseCore.DTO\obj\Debug\net8.0\refint\BaseCore.DTO.dll
+d:\BaseCore 17-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.pdb
+d:\BaseCore 17-6\BaseCore.DTO\obj\Debug\net8.0\ref\BaseCore.DTO.dll
+D:\BaseCore 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfoInputs.cache
+D:\BaseCore 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfo.cs
+D:\BaseCore 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.csproj.CoreCompileInputs.cache
+D:\BaseCore 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore 22-6\BaseCore.DTO\obj\Debug\net8.0\refint\BaseCore.DTO.dll
+D:\BaseCore 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore 22-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.deps.json
+D:\BaseCore 22-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore 22-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore 22-6\BaseCore.DTO\obj\Debug\net8.0\ref\BaseCore.DTO.dll
+D:\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfoInputs.cache
+D:\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfo.cs
+D:\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.csproj.CoreCompileInputs.cache
+D:\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\refint\BaseCore.DTO.dll
+D:\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseC0re 22-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.deps.json
+D:\BaseC0re 22-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseC0re 22-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\ref\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.deps.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\bin\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfoInputs.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.AssemblyInfo.cs
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\refint\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.DTO\obj\Debug\net8.0\ref\BaseCore.DTO.dll

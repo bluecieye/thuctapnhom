@@ -1,0 +1,954 @@
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\appsettings.Development.json
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\appsettings.json
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.staticwebassets.endpoints.json
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.exe
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.deps.json
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.runtimeconfig.json
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.pdb
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\AutoMapper.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Azure.Core.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Azure.Identity.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Humanizer.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Quartz.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.CodeDom.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Memory.Data.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.dll
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.pdb
+D:\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.AssemblyReference.cache
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfoInputs.cache
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfo.cs
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.CoreCompileInputs.cache
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cs
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cache
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\scopedcss\bundle\BaseCore.APIService.styles.css
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.development.json
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\swae.build.ex.cache
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.C709CDC1.Up2Date
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.dll
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\refint\BaseCore.APIService.dll
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.pdb
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.genruntimeconfig.cache
+D:\BaseCore\BaseCore.APIService\obj\Debug\net8.0\ref\BaseCore.APIService.dll
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.dll
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\refint\BaseCore.APIService.dll
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.pdb
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\appsettings.Development.json
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\appsettings.json
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.staticwebassets.endpoints.json
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.exe
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.deps.json
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.runtimeconfig.json
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.pdb
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\AutoMapper.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Azure.Core.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Azure.Identity.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Humanizer.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Quartz.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.CodeDom.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Memory.Data.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.dll
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.pdb
+D:\BaseCore0\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.AssemblyReference.cache
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfoInputs.cache
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfo.cs
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.CoreCompileInputs.cache
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cs
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cache
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\scopedcss\bundle\BaseCore.APIService.styles.css
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.development.json
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\swae.build.ex.cache
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.C709CDC1.Up2Date
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.genruntimeconfig.cache
+D:\BaseCore0\BaseCore.APIService\obj\Debug\net8.0\ref\BaseCore.APIService.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\appsettings.Development.json
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.staticwebassets.endpoints.json
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\appsettings.json
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.exe
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.deps.json
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.runtimeconfig.json
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.pdb
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\AutoMapper.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Azure.Core.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Azure.Identity.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Humanizer.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Mono.TextTemplating.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Newtonsoft.Json.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Quartz.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\StackExchange.Redis.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.CodeDom.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Convention.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Hosting.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Runtime.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.TypedParts.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Drawing.Common.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Memory.Data.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Runtime.Caching.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Security.Permissions.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\System.Windows.Extensions.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.dll
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.pdb
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.pdb
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.pdb
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.pdb
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.pdb
+d:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.pdb
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.AssemblyReference.cache
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\rpswa.dswa.cache.json
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.GeneratedMSBuildEditorConfig.editorconfig
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfoInputs.cache
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfo.cs
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.CoreCompileInputs.cache
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cs
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cache
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\rjimswa.dswa.cache.json
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\scopedcss\bundle\BaseCore.APIService.styles.css
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json.cache
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.development.json
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\swae.build.ex.cache
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.C709CDC1.Up2Date
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.dll
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\refint\BaseCore.APIService.dll
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.pdb
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.genruntimeconfig.cache
+d:\BaseCore 17-6\BaseCore.APIService\obj\Debug\net8.0\ref\BaseCore.APIService.dll
+D:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\MailKit.dll
+D:\BaseCore 17-6\BaseCore.APIService\bin\Debug\net8.0\MimeKit.dll
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.dll
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\refint\BaseCore.APIService.dll
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.pdb
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\appsettings.Development.json
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\appsettings.json
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.staticwebassets.endpoints.json
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.exe
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.deps.json
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.runtimeconfig.json
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.pdb
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\AutoMapper.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Azure.Core.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Azure.Identity.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Humanizer.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\MailKit.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\MimeKit.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Quartz.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.CodeDom.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Memory.Data.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.dll
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.pdb
+D:\BaseCore 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.AssemblyReference.cache
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfoInputs.cache
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfo.cs
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.CoreCompileInputs.cache
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cs
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cache
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\scopedcss\bundle\BaseCore.APIService.styles.css
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.development.json
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\swae.build.ex.cache
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.C709CDC1.Up2Date
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.genruntimeconfig.cache
+D:\BaseCore 22-6\BaseCore.APIService\obj\Debug\net8.0\ref\BaseCore.APIService.dll
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.dll
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\refint\BaseCore.APIService.dll
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.pdb
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\appsettings.Development.json
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.staticwebassets.endpoints.json
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\appsettings.json
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.exe
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.deps.json
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.runtimeconfig.json
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.pdb
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\AutoMapper.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Azure.Core.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Azure.Identity.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Humanizer.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\MailKit.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\MimeKit.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Quartz.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.CodeDom.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Memory.Data.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.dll
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.pdb
+D:\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.AssemblyReference.cache
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfoInputs.cache
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfo.cs
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.CoreCompileInputs.cache
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cs
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cache
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\scopedcss\bundle\BaseCore.APIService.styles.css
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.development.json
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\swae.build.ex.cache
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.C709CDC1.Up2Date
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.genruntimeconfig.cache
+D:\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\ref\BaseCore.APIService.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\appsettings.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.staticwebassets.endpoints.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.exe
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.deps.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.runtimeconfig.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\MailKit.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\MimeKit.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Quartz.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Common.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Entities.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Services.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\bin\Debug\net8.0\BaseCore.Libs.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.AssemblyReference.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfoInputs.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.AssemblyInfo.cs
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.csproj.CoreCompileInputs.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\scopedcss\bundle\BaseCore.APIService.styles.css
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.C709CDC1.Up2Date
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\refint\BaseCore.APIService.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.genruntimeconfig.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.APIService\obj\Debug\net8.0\ref\BaseCore.APIService.dll

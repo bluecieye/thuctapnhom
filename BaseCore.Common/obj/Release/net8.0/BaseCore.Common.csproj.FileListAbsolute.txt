@@ -1,0 +1,12 @@
+D:\BaseCore 17-6\BaseCore.Common\bin\Release\net8.0\BaseCore.Common.deps.json
+D:\BaseCore 17-6\BaseCore.Common\bin\Release\net8.0\BaseCore.Common.dll
+D:\BaseCore 17-6\BaseCore.Common\bin\Release\net8.0\BaseCore.Common.pdb
+D:\BaseCore 17-6\BaseCore.Common\obj\Release\net8.0\BaseCore.Common.csproj.AssemblyReference.cache
+D:\BaseCore 17-6\BaseCore.Common\obj\Release\net8.0\BaseCore.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore 17-6\BaseCore.Common\obj\Release\net8.0\BaseCore.Common.AssemblyInfoInputs.cache
+D:\BaseCore 17-6\BaseCore.Common\obj\Release\net8.0\BaseCore.Common.AssemblyInfo.cs
+D:\BaseCore 17-6\BaseCore.Common\obj\Release\net8.0\BaseCore.Common.csproj.CoreCompileInputs.cache
+D:\BaseCore 17-6\BaseCore.Common\obj\Release\net8.0\BaseCore.Common.dll
+D:\BaseCore 17-6\BaseCore.Common\obj\Release\net8.0\refint\BaseCore.Common.dll
+D:\BaseCore 17-6\BaseCore.Common\obj\Release\net8.0\BaseCore.Common.pdb
+D:\BaseCore 17-6\BaseCore.Common\obj\Release\net8.0\ref\BaseCore.Common.dll

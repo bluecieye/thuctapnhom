@@ -1,0 +1,345 @@
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+D:\Code\CSharp\RobotVibot_WithoutChange-main\RobotVibot_WithoutChange-main\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+D:\Code\CSharp\RobotVibot_WithoutChange-main\BaseCore\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+C:\Users\pc\Downloads\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+C:\Users\ndngu\SOURCE\BaseCore\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+C:\Users\Admin\Desktop\BaseCore\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\FW\FW\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+D:\FW\FW\BaseCore\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+C:\Users\Asus G15\Downloads\BaseCore\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+D:\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+C:\Users\Asus G15\Downloads\BaseCorevêr2 (2)\BaseCorevêr2\BaseCore\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseCore\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+D:\BaseCore\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseCore0\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+D:\BaseCore0\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+d:\BaseCore 17-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+d:\BaseCore 17-6\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseCore 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+D:\BaseCore 22-6\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+D:\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+D:\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.deps.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.runtimeconfig.json
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Common.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.DTO.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Entities.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\bin\Debug\net8.0\BaseCore.Libs.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.AssemblyReference.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfoInputs.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.AssemblyInfo.cs
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.92782631.Up2Date
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Repository.dll
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
+C:\Users\Asus G15\Downloads\BaseC0re 22-6\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
