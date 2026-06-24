@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.APIService\\BaseCore.APIService.csproj": {}
+    "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.APIService\\BaseCore.APIService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.APIService\\BaseCore.APIService.csproj": {
+    "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.APIService\\BaseCore.APIService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.APIService\\BaseCore.APIService.csproj",
+        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.APIService\\BaseCore.APIService.csproj",
         "projectName": "BaseCore.APIService",
-        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.APIService\\BaseCore.APIService.csproj",
+        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.APIService\\BaseCore.APIService.csproj",
         "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.APIService\\obj\\",
+        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.APIService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,20 +32,20 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj"
               }
             }
           }
@@ -108,14 +108,14 @@
         }
       }
     },
-    "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
+    "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj",
         "projectName": "BaseCore.Common",
-        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj",
+        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj",
         "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\obj\\",
+        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -199,14 +199,14 @@
         }
       }
     },
-    "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
+    "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj",
+        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj",
         "projectName": "BaseCore.DTO",
-        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj",
+        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj",
         "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\obj\\",
+        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -264,14 +264,14 @@
         }
       }
     },
-    "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
+    "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj",
         "projectName": "BaseCore.Entities",
-        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj",
+        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj",
         "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\obj\\",
+        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -292,11 +292,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj"
               }
             }
           }
@@ -336,14 +336,14 @@
         }
       }
     },
-    "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Libs\\BaseCore.Libs.csproj": {
+    "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Libs\\BaseCore.Libs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Libs\\BaseCore.Libs.csproj",
+        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Libs\\BaseCore.Libs.csproj",
         "projectName": "BaseCore.Libs",
-        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Libs\\BaseCore.Libs.csproj",
+        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Libs\\BaseCore.Libs.csproj",
         "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Libs\\obj\\",
+        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Libs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -364,11 +364,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj"
               }
             }
           }
@@ -422,14 +422,14 @@
         }
       }
     },
-    "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj": {
+    "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj",
         "projectName": "BaseCore.Repository",
-        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj",
+        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj",
         "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Repository\\obj\\",
+        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -450,17 +450,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Libs\\BaseCore.Libs.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Libs\\BaseCore.Libs.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Libs\\BaseCore.Libs.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Libs\\BaseCore.Libs.csproj"
               }
             }
           }
@@ -516,14 +516,14 @@
         }
       }
     },
-    "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj": {
+    "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj",
         "projectName": "BaseCore.Services",
-        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj",
+        "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Services\\BaseCore.Services.csproj",
         "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Services\\obj\\",
+        "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -544,17 +544,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Common\\BaseCore.Common.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj"
               },
-              "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj": {
-                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj"
+              "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj": {
+                "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj"
               }
             }
           }

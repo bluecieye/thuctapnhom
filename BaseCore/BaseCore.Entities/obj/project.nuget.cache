@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p5GKrSkzCE4=",
+  "dgSpecHash": "gQLCDaDZIiE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj",
+  "projectFilePath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Entities\\BaseCore.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus G15\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Asus G15\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",

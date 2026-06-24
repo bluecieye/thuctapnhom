@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj",
+      "projectUniqueName": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj",
       "projectName": "BaseCore.DTO",
-      "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj",
+      "projectPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\BaseCore.DTO.csproj",
       "packagesPath": "C:\\Users\\Asus G15\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.DTO\\obj\\",
+      "outputPath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

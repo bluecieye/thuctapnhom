@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tkNeabGVmuI=",
+  "dgSpecHash": "nmp+y74wIRY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj",
+  "projectFilePath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.Repository\\BaseCore.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus G15\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Asus G15\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

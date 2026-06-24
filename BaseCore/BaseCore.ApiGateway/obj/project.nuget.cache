@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bVnxU0Wz62Q=",
+  "dgSpecHash": "b8vi9GFjysQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus G15\\Downloads\\BaseCore 27-5\\BaseCore 27-5\\thuctapnhom\\BaseCore\\BaseCore.ApiGateway\\BaseCore.ApiGateway.csproj",
+  "projectFilePath": "C:\\Users\\Asus G15\\Downloads\\BaseC0re 22-6\\BaseCore\\thuctapnhom\\BaseCore\\BaseCore.ApiGateway\\BaseCore.ApiGateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus G15\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\Asus G15\\.nuget\\packages\\ipaddressrange\\6.0.0\\ipaddressrange.6.0.0.nupkg.sha512",
